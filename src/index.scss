@@ -1,6 +1,15 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: #1f1f38;
 }
 
 html {
