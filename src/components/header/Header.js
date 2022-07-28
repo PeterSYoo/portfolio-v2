@@ -12,7 +12,7 @@ const Header = () => {
 
         <div className="py-logo">
           <img src="https://i.imgur.com/93HQrPY.png" alt="logo" />
-          <h2 className="text-white">Fullstack Developer</h2>
+          <h2 className="text-white">software engineer</h2>
           <CTA />
         </div>
         <div className="me">
