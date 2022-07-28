@@ -9,12 +9,13 @@
 }
 
 :root {
-  --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
-  --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-bg: #2c2f38;
+  --color-bg-variant: #252422;
+  --color-primary: #85b5e2;
+  --color-primary-variant: rgba(77, 187, 255, 0.4);
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(0, 0, 0);
+  --color-light: rgba(0, 0, 0, 0.6);
 
   --transition: all 400ms ease;
 
@@ -73,6 +74,14 @@ section > h2 {
 
 .text-light {
   color: var(--color-light);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.text-dark {
+  color: var(--color-black);
 }
 
 a {

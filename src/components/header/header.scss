@@ -12,7 +12,7 @@ header {
 
 /* ==== CTA ==== */
 .cta {
-  margin-top: 2.5rem;
+  margin-top: 5rem;
   display: flex;
   gap: 1.2rem;
   justify-content: center;
@@ -38,15 +38,28 @@ header {
 
 /* ==== ME ==== */
 .me {
-  background: linear-gradient(var(--color-primary), transparent);
-  width: 22rem;
+  // background: linear-gradient(var(--color-primary), transparent);
+  width: 20rem;
   height: 30rem;
   position: absolute;
-  left: calc(50% - 11rem);
+  left: calc(50% - 10rem);
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  padding: 0rem 0rem 1.5rem 0;
+}
+
+.py-logo {
+  width: 342px;
+  position: absolute;
+  left: calc(50% - 11rem);
+  z-index: 1;
+  margin-top: 300px;
+}
+
+.py-logo > h3 {
+  margin-top: 10px;
+  font-weight: 200;
 }
 
 /* ==== Scroll Down ==== */
