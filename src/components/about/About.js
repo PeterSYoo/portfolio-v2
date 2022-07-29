@@ -33,7 +33,7 @@ const About = () => {
           </p>
 
           <div className="contact__me">
-            <a href="#contact" target="_blank" rel="norefererr">
+            <a href="#contact" rel="norefererr">
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
