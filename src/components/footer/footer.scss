@@ -32,23 +32,57 @@ footer a {
 .footer__socials {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
   margin-bottom: 4rem;
 }
 
-.footer__socials a {
-  background: var(--color-primary);
-  color: var(--color-white);
-  padding: 0.8rem;
-  border-radius: 0.7rem;
-  display: flex;
-  border: 1px solid transparent;
+.footer__resume-btn {
+  margin-top: 0.3rem;
+  border: 1px solid #85b5e2;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  border-radius: 0.35rem;
+
+  .footer__resume-text {
+    font-weight: lighter;
+    font-size: 0.85rem;
+    position: relative;
+    color: #85b5e2;
+  }
 }
 
-.footer__socials a:hover {
-  background: transparent;
+.footer__resume-btn:hover {
+  border: 1px solid #85b5e2;
+  background-color: #85b5e2;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  border-radius: 0.35rem;
+
+  .footer__resume-text {
+    font-weight: lighter;
+    font-size: 0.85rem;
+    position: relative;
+    color: #ffffff;
+  }
+}
+
+.footer__resume-text {
+  font-weight: 200;
+  font-size: 0.85rem;
+  position: relative;
+  color: #85b5e2;
+}
+
+.footer__linkedin-btn,
+.footer__github-btn {
   color: var(--color-primary);
-  border-color: var(--color-primary);
+  font-size: 2rem;
+}
+
+.footer__linkedin-btn:hover,
+.footer__github-btn:hover {
+  color: var(--color-white);
 }
 
 .footer__copyright {

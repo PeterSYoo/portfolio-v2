@@ -1,6 +1,7 @@
 import './footer.scss';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
@@ -14,24 +15,34 @@ const Footer = () => {
           <a href="#">Home</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#">Experience</a>
+          <a href="#toolkit">Toolkit</a>
         </li>
         <li>
-          <a href="#">Portfolio</a>
+          <a href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
 
       <div className="footer__socials">
+        <a href="#" target="_blank" rel="norefererr">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="footer__resume-btn"
+          >
+            <font className="footer__resume-text">Resume</font>
+          </motion.button>
+        </a>
         <a
           href="https://www.linkedin.com/in/petersyoo/"
           target="_blank"
           rel="noopener noreferrer"
+          className="footer__linkedin-btn"
         >
           <BsLinkedin />
         </a>
@@ -39,6 +50,7 @@ const Footer = () => {
           href="https://github.com/PeterSYoo"
           target="_blank"
           rel="noopener noreferrer"
+          className="footer__github-btn"
         >
           <FaGithub />
         </a>
