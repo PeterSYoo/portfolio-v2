@@ -103,6 +103,7 @@ header {
 
 .socials__title > h3 {
   margin-top: 0.35rem;
+  font-weight: 200;
 }
 
 .header__socials {
@@ -126,7 +127,7 @@ header {
   position: absolute;
   // right: -2.3rem;
   bottom: 5rem;
-  // transform: rotate(90deg);
+  transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.85rem;
   left: calc(50% - 2.5rem);
@@ -136,7 +137,7 @@ header {
   position: absolute;
   // right: -2.3rem;
   bottom: 5rem;
-  transform: rotate(90deg);
+  transform: rotate(0deg);
   font-weight: 300;
   font-size: 0.85rem;
   left: calc(50% - 2.5rem);
@@ -158,7 +159,7 @@ header {
   height: 30rem;
   position: absolute;
   left: calc(50% - 10rem);
-  margin-top: 7rem;
+  margin-top: 10.5rem;
   border-radius: 12rem 12rem 0 0;
   padding: 0rem 0rem 1.5rem 0;
 }
@@ -168,7 +169,7 @@ header {
   position: absolute;
   left: calc(50% - 11rem);
   z-index: 1;
-  margin-top: 22rem;
+  margin-top: 27rem;
 }
 
 .py-logo > h2 {

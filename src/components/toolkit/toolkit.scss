@@ -15,7 +15,7 @@
 .toolkit__container > div {
   background: var(--color-bg-variant);
   padding: 2.4rem 5rem;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   border: 1px solid transparent;
   transform: var(--transition);
 }
@@ -44,7 +44,7 @@
 }
 
 .toolkit__details-icon {
-  margin-top: 6px;
+  margin-top: 4px;
   color: var(--color-primary);
 }
 

@@ -1,5 +1,5 @@
 import './toolkit.scss';
-import { BsCheck2Square } from 'react-icons/bs';
+import { CgCheckR } from 'react-icons/cg';
 
 const Toolkit = () => {
   return (
@@ -11,37 +11,31 @@ const Toolkit = () => {
           <h3>Frontend Development</h3>
           <div className="toolkit__content">
             <article className="toolkit__details">
-              <BsCheck2Square className="toolkit__details-icon" />
+              <CgCheckR className="toolkit__details-icon" />
               <div>
                 <h4>HTML</h4>
               </div>
             </article>
             <article className="toolkit__details">
-              <BsCheck2Square className="toolkit__details-icon" />
+              <CgCheckR className="toolkit__details-icon" />
               <div>
                 <h4>CSS</h4>
               </div>
             </article>
             <article className="toolkit__details">
-              <BsCheck2Square className="toolkit__details-icon" />
+              <CgCheckR className="toolkit__details-icon" />
               <div>
                 <h4>JavaScript</h4>
               </div>
             </article>
             <article className="toolkit__details">
-              <BsCheck2Square className="toolkit__details-icon" />
+              <CgCheckR className="toolkit__details-icon" />
               <div>
-                <h4>Django</h4>
+                <h4>jQuery</h4>
               </div>
             </article>
             <article className="toolkit__details">
-              <BsCheck2Square className="toolkit__details-icon" />
-              <div>
-                <h4>Python</h4>
-              </div>
-            </article>
-            <article className="toolkit__details">
-              <BsCheck2Square className="toolkit__details-icon" />
+              <CgCheckR className="toolkit__details-icon" />
               <div>
                 <h4>React</h4>
               </div>
@@ -53,39 +47,45 @@ const Toolkit = () => {
           <h3>Backend Development</h3>
           <div className="toolkit__content">
             <article className="toolkit__details">
-              <BsCheck2Square className="toolkit__details-icon" />
+              <CgCheckR className="toolkit__details-icon" />
               <div>
-                <h4>Node JS</h4>
+                <h4>NodeJS</h4>
               </div>
             </article>
             <article className="toolkit__details">
-              <BsCheck2Square className="toolkit__details-icon" />
+              <CgCheckR className="toolkit__details-icon" />
               <div>
                 <h4>MongoDB</h4>
               </div>
             </article>
             <article className="toolkit__details">
-              <BsCheck2Square className="toolkit__details-icon" />
+              <CgCheckR className="toolkit__details-icon" />
               <div>
                 <h4>Mongoose</h4>
               </div>
             </article>
             <article className="toolkit__details">
-              <BsCheck2Square className="toolkit__details-icon" />
+              <CgCheckR className="toolkit__details-icon" />
               <div>
                 <h4>Django</h4>
               </div>
             </article>
             <article className="toolkit__details">
-              <BsCheck2Square className="toolkit__details-icon" />
+              <CgCheckR className="toolkit__details-icon" />
               <div>
                 <h4>PostgreSQL</h4>
               </div>
             </article>
             <article className="toolkit__details">
-              <BsCheck2Square className="toolkit__details-icon" />
+              <CgCheckR className="toolkit__details-icon" />
               <div>
                 <h4>Python</h4>
+              </div>
+            </article>
+            <article className="toolkit__details">
+              <CgCheckR className="toolkit__details-icon" />
+              <div>
+                <h4>ExpressJS</h4>
               </div>
             </article>
           </div>

@@ -22,7 +22,6 @@ const Header = () => {
         <div className="py-logo">
           <img src="https://i.imgur.com/93HQrPY.png" alt="logo" />
           <div className="socials__title">
-            {' '}
             <HeaderSocials />
             <h3 className="text-white">software engineer</h3>
           </div>

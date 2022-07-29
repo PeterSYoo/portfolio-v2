@@ -1,5 +1,6 @@
 #about {
   padding-top: 5rem;
+  margin-bottom: -5rem;
 }
 
 .about__container {
@@ -16,23 +17,59 @@
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
-  // background: linear-gradient(
-  //   45deg,
-  //   transparent,
-  //   var(--color-primary),
-  //   transparent
-  // );
   display: grid;
   place-items: center;
 }
 
 .about__me-quote {
+  height: 100%;
   text-align: center;
+  margin-top: -20rem;
+
+  .quote__bg {
+    margin-top: 9rem;
+    z-index: 0;
+    width: 500px;
+  }
 }
 
 .about__content p {
   margin: 0 0 2.6rem 0;
   color: var(--color-white);
+}
+
+/* ==== Meda Queries (Custom) ==== */
+@media screen and (max-width: 1387px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about__me {
+    width: 50%;
+    margin: 2rem auto 5rem;
+  }
+
+  .about__me-quote {
+    height: 100%;
+    text-align: center;
+    margin-top: -20rem;
+
+    .quote__bg {
+      margin-top: 8rem;
+      margin-left: calc(-12%);
+      z-index: 0;
+      width: 600px;
+    }
+  }
+
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+  }
+
+  #lets__talk {
+    margin-left: calc(50% - 3rem);
+  }
 }
 
 /* ==== Meda Queries (Tablet) ==== */
@@ -44,11 +81,94 @@
 
   .about__me {
     width: 50%;
-    margin: 2rem auto 4rem;
+    margin: 2rem auto -1rem;
+  }
+
+  .about__me-quote {
+    height: 100%;
+    text-align: center;
+    margin-top: -15rem;
+
+    .quote__bg {
+      margin-top: 5rem;
+      margin-left: calc(-6%);
+      z-index: 0;
+      width: 500px;
+    }
   }
 
   .about__content p {
     margin: 1rem 0 1.5rem;
+  }
+
+  #lets__talk {
+    margin-left: calc(50% - 3rem);
+  }
+}
+
+/* ==== Meda Queries (907px) ==== */
+@media screen and (max-width: 907px) {
+  .about__me {
+    width: 65%;
+    margin: 0 auto -4rem;
+  }
+
+  .about__me-quote {
+    height: 100%;
+    text-align: center;
+    margin-top: -23rem;
+
+    .quote__bg {
+      margin-top: 10rem;
+      margin-left: -2rem;
+      z-index: 0;
+      width: 500px;
+    }
+  }
+
+  .about__content {
+    text-align: center;
+  }
+
+  .about__content p {
+    margin: 1.5rem 0;
+  }
+
+  #lets__talk {
+    margin-left: calc(50% - 23.5rem);
+  }
+}
+
+/* ==== Meda Queries (796px) ==== */
+@media screen and (max-width: 796px) {
+  .about__me {
+    width: 65%;
+    margin: 0 auto 1rem;
+  }
+
+  .about__me-quote {
+    height: 100%;
+    text-align: center;
+    margin-top: -23rem;
+
+    .quote__bg {
+      margin-top: 10rem;
+      margin-left: -2rem;
+      z-index: 0;
+      width: 500px;
+    }
+  }
+
+  .about__content {
+    text-align: center;
+  }
+
+  .about__content p {
+    margin: 1.5rem 0;
+  }
+
+  #lets__talk {
+    margin-left: calc(50% - 21.5rem);
   }
 }
 
@@ -59,11 +179,28 @@
     margin: 0 auto 3rem;
   }
 
+  .about__me-quote {
+    height: 100%;
+    text-align: center;
+    margin-top: -23rem;
+
+    .quote__bg {
+      margin-top: 10rem;
+      margin-left: -2rem;
+      z-index: 0;
+      width: 320px;
+    }
+  }
+
   .about__content {
     text-align: center;
   }
 
   .about__content p {
     margin: 1.5rem 0;
+  }
+
+  #lets__talk {
+    margin-left: calc(50% - 11.5rem);
   }
 }
