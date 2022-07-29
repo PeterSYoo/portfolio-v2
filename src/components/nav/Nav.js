@@ -1,9 +1,10 @@
 import './nav.scss';
 import { useState } from 'react';
-import { AiOutlineHome } from 'react-icons/ai';
-import { AiOutlineUser } from 'react-icons/ai';
-import { BiBook } from 'react-icons/bi';
-import { BiMessageSquareDetail } from 'react-icons/bi';
+import { ImHome } from 'react-icons/im';
+import { ImUser } from 'react-icons/im';
+import { GiToolbox } from 'react-icons/gi';
+import { ImBriefcase } from 'react-icons/im';
+import { AiFillMessage } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 
 const Nav = () => {
@@ -17,7 +18,7 @@ const Nav = () => {
         className={activeNav === '#' ? 'active' : ''}
         whileTap={{ scale: 0.9 }}
       >
-        <AiOutlineHome />
+        <ImHome />
       </motion.a>
       <motion.a
         href="#about"
@@ -25,15 +26,23 @@ const Nav = () => {
         className={activeNav === '#about' ? 'active' : ''}
         whileTap={{ scale: 0.9 }}
       >
-        <AiOutlineUser />
+        <ImUser />
       </motion.a>
       <motion.a
-        href="#experience"
-        onClick={() => setActiveNav('#experience')}
-        className={activeNav === '#experience' ? 'active' : ''}
+        href="#toolkit"
+        onClick={() => setActiveNav('#toolkit')}
+        className={activeNav === '#toolkit' ? 'active' : ''}
         whileTap={{ scale: 0.9 }}
       >
-        <BiBook />
+        <GiToolbox />
+      </motion.a>
+      <motion.a
+        href="#portfolio"
+        onClick={() => setActiveNav('#portfolio')}
+        className={activeNav === '#portfolio' ? 'active' : ''}
+        whileTap={{ scale: 0.9 }}
+      >
+        <ImBriefcase />
       </motion.a>
       <motion.a
         href="#contact"
@@ -41,7 +50,7 @@ const Nav = () => {
         className={activeNav === '#contact' ? 'active' : ''}
         whileTap={{ scale: 0.9 }}
       >
-        <BiMessageSquareDetail />
+        <AiFillMessage />
       </motion.a>
     </nav>
   );

@@ -1,8 +1,16 @@
+#contact {
+  padding-top: 5rem;
+}
+
 .container.contact__container {
   width: 58%;
   display: grid;
   grid-template-columns: 30% 58%;
   gap: 12%;
+}
+
+#contact > h5 {
+  color: var(--color-white);
 }
 
 .contact__options {

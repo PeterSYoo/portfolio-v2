@@ -1,3 +1,11 @@
+#portfolio {
+  padding-top: 5rem;
+}
+
+#portfolio > h5 {
+  color: var(--color-white);
+}
+
 .portfolio__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

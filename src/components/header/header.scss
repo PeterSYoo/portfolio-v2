@@ -12,102 +12,143 @@ header {
 
 /* ==== CTA ==== */
 .cta {
-  margin-top: 5rem;
+  margin-top: -7.3rem;
   display: flex;
-  gap: 3rem;
+  gap: 21.5rem;
   justify-content: center;
 }
 
 .cta__resume-btn {
-  border: 0.1rem solid #85b5e2;
+  border-bottom: 0.1rem solid #85b5e2;
   background-color: transparent;
   cursor: pointer;
-  padding: 1rem 1.5rem 1rem 1.5rem;
-  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.45rem 1.5rem;
+  border-radius: 0 0 0 0.5rem;
 
   .cta__resume-text {
     font-weight: 200;
-    font-size: 1rem;
+    font-size: 0.75rem;
     position: relative;
     color: #85b5e2;
   }
 }
 
 .cta__resume-btn:hover {
-  border: 0;
-  background-color: #85b5e2;
+  border-bottom: 0.1rem solid #85b5e2;
+  background-color: transparent;
   cursor: pointer;
-  padding: 1rem 1.5rem 1rem 1.5rem;
-  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.45rem 1.5rem;
+  border-radius: 0 0 0 0.5rem;
 
   .cta__resume-text {
     font-weight: 200;
-    font-size: 1rem;
+    font-size: 0.75rem;
     position: relative;
-    color: #252422;
+    color: #ffffff;
   }
 }
 
 .cta__resume-text {
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 0.75rem;
   position: relative;
   color: #252422;
 }
 
 .cta__contact-btn {
-  border: 0.1rem solid #85b5e2;
+  border-bottom: 0.1rem solid #85b5e2;
   background-color: transparent;
   cursor: pointer;
-  padding: 1rem 1.5rem 1rem 1.5rem;
-  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem 0.45rem 1rem;
+  border-radius: 0 0 0.5rem 0;
 
   .cta__contact-text {
     font-weight: 200;
-    font-size: 1rem;
+    font-size: 0.75rem;
     position: relative;
     color: #85b5e2;
   }
 }
 
 .cta__contact-btn:hover {
-  border: 0;
-  background-color: #85b5e2;
+  border-bottom: 0.1rem solid #85b5e2;
+  background-color: transparent;
   cursor: pointer;
-  padding: 1rem 1.5rem 1rem 1.5rem;
-  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem 0.45rem 1rem;
+  border-radius: 0 0 0.5rem 0;
 
   .cta__contact-text {
     font-weight: 200;
-    font-size: 1rem;
+    font-size: 0.75rem;
     position: relative;
-    color: #252422;
+    color: #ffffff;
   }
 }
 
 .cta__contact-text {
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 0.75rem;
   position: relative;
   color: #252422;
 }
 
 /* ==== Socials ==== */
+.socials__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.socials__title > h3 {
+  margin-top: 0.35rem;
+}
+
 .header__socials {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
-  position: absolute;
-  left: 0;
-  bottom: 3rem;
+  justify-content: center;
+  gap: 1.5em;
+  margin: 1rem 0 0 0;
+  font-size: 1.5rem;
 }
 
 .header__socials::after {
   content: '';
   width: 1px;
-  height: 2rem;
-  background: var(--color-primary);
+  height: 1rem;
+  background: var(--color-white);
+  margin-top: 0.55rem;
+}
+
+/* ==== Scroll Down ==== */
+.scroll__down {
+  position: absolute;
+  // right: -2.3rem;
+  bottom: 5rem;
+  // transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.85rem;
+  left: calc(50% - 2.5rem);
+}
+
+.scroll__down:hover {
+  position: absolute;
+  // right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.85rem;
+  left: calc(50% - 2.5rem);
+}
+
+.scroll__down-icon {
+  position: absolute;
+  // right: -2.3rem;
+  bottom: 1rem;
+  // transform: rotate(90deg);
+  left: calc(50% - 0.8rem);
+  color: #85b5e2;
 }
 
 /* ==== ME ==== */
@@ -117,9 +158,8 @@ header {
   height: 30rem;
   position: absolute;
   left: calc(50% - 10rem);
-  margin-top: 4rem;
+  margin-top: 7rem;
   border-radius: 12rem 12rem 0 0;
-  overflow: hidden;
   padding: 0rem 0rem 1.5rem 0;
 }
 
@@ -128,7 +168,7 @@ header {
   position: absolute;
   left: calc(50% - 11rem);
   z-index: 1;
-  margin-top: 300px;
+  margin-top: 22rem;
 }
 
 .py-logo > h2 {
@@ -136,20 +176,10 @@ header {
   font-weight: 200;
 }
 
-/* ==== Scroll Down ==== */
-.scroll__down {
-  position: absolute;
-  right: -2.3rem;
-  bottom: 5rem;
-  transform: rotate(90deg);
-  font-weight: 300;
-  font-size: 0.9rem;
-}
-
 /* ==== Meda Queries (Tablet) ==== */
 @media screen and (max-width: 1024px) {
   header {
-    height: 68vh;
+    height: 100vh;
   }
 }
 
@@ -159,8 +189,15 @@ header {
     height: 100vh;
   }
 
-  .header__socials,
-  .scroll__down {
-    display: none;
+  .cta {
+    margin-top: -4.3rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
   }
+
+  // .header__socials,
+  // .scroll__down {
+  //   display: none;
+  // }
 }

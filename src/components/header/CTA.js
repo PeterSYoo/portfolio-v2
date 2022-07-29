@@ -5,7 +5,7 @@ const CTA = () => {
     <div className="cta">
       <a href="#" target="_blank" rel="norefererr">
         <motion.button
-          whileHover={{ scale: 1.1 }}
+          // whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           className="cta__resume-btn"
         >
@@ -14,7 +14,7 @@ const CTA = () => {
       </a>
       <a href="#contact">
         <motion.button
-          whileHover={{ scale: 1.1 }}
+          // whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           className="cta__contact-btn"
         >

@@ -1,19 +1,27 @@
+#about {
+  padding-top: 5rem;
+}
+
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
 }
 
+#about > h5 {
+  color: var(--color-white);
+}
+
 .about__me {
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    var(--color-primary),
-    transparent
-  );
+  // background: linear-gradient(
+  //   45deg,
+  //   transparent,
+  //   var(--color-primary),
+  //   transparent
+  // );
   display: grid;
   place-items: center;
 }
@@ -24,7 +32,7 @@
 
 .about__content p {
   margin: 0 0 2.6rem 0;
-  color: var(--color-light);
+  color: var(--color-white);
 }
 
 /* ==== Meda Queries (Tablet) ==== */
