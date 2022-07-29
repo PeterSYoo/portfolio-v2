@@ -156,21 +156,21 @@ header {
   }
 
   .me {
-    width: 20rem;
+    width: 15rem;
     height: 30rem;
     position: absolute;
-    left: calc(50% - 10rem);
-    margin-top: 0rem;
+    left: calc(50% - 7.5rem);
+    margin-top: -2rem;
     border-radius: 12rem 12rem 0 0;
     padding: 0rem 0rem 1.5rem 0;
   }
 
   .py-logo {
-    width: 342px;
+    width: 242px;
     position: absolute;
-    left: calc(50% - 11rem);
+    left: calc(50% - 7.5rem);
     z-index: 1;
-    margin-top: 16.5rem;
+    margin-top: 10.5rem;
   }
 
   .socials__title {
@@ -180,6 +180,10 @@ header {
     align-items: center;
     gap: 1.5rem;
     width: 415px;
-    margin: 0 0 0 -3rem;
+    margin: 0 0 0 -6rem;
+  }
+
+  .header__socials::after {
+    display: none;
   }
 }
