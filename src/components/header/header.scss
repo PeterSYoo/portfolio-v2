@@ -155,6 +155,24 @@ header {
     height: 100vh;
   }
 
+  .me {
+    width: 20rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 10rem);
+    margin-top: 1.5rem;
+    border-radius: 12rem 12rem 0 0;
+    padding: 0rem 0rem 1.5rem 0;
+  }
+
+  .py-logo {
+    width: 342px;
+    position: absolute;
+    left: calc(50% - 11rem);
+    z-index: 1;
+    margin-top: 18rem;
+  }
+
   .socials__title {
     display: flex;
     flex-direction: column;
