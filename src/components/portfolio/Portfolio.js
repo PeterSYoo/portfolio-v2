@@ -38,11 +38,11 @@ const textAnimate = {
 };
 
 const btnAnimate = {
-  offScreen: { y: 100, opacity: 0 },
+  offScreen: { x: 100, opacity: 0 },
   onScreen: {
-    y: 0,
+    x: 0,
     opacity: 1,
-    transition: { type: 'spring', bounce: 0.4, duration: 0.25 },
+    transition: { type: 'spring', bounce: 0.4, duration: 2 },
   },
 };
 
@@ -124,25 +124,28 @@ const Portfolio = () => {
               </motion.div>
               <motion.h3 variants={textAnimate}>{title}</motion.h3>
               <div className="portfolio__item-cta">
-                <motion.a
-                  href={github}
-                  className="btn"
-                  target="_blank"
-                  rel="noreferrer"
-                  variants={btnAnimate}
-                >
-                  Github
-                </motion.a>
-                {demo ? (
-                  <motion.a
-                    href={demo}
-                    className="btn btn-primary"
-                    target="_blank"
-                    rel="noreferrer"
+                <a href={github} target="_blank" rel="noreferrer">
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="portfolio__github-btn"
                     variants={btnAnimate}
                   >
-                    Live Demo
-                  </motion.a>
+                    <font className="portfolio__github-text">Github</font>
+                  </motion.button>
+                </a>
+
+                {demo ? (
+                  <a href={demo} target="_blank" rel="noreferrer">
+                    <motion.button
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="portfolio__demo-btn"
+                      variants={btnAnimate}
+                    >
+                      <font className="portfolio__demo-text">Live Demo</font>
+                    </motion.button>
+                  </a>
                 ) : null}
               </div>
             </motion.article>

@@ -30,7 +30,7 @@
 
 .contact__option:hover {
   background: transparent;
-  border-color: var(--color-primary-variant);
+  border-color: var(--color-primary);
 }
 
 .contact__option-icon {
@@ -57,9 +57,39 @@ textarea {
   padding: 1.5rem;
   border-radius: 0.5rem;
   background: transparent;
-  border: 1.75px solid var(--color-primary-variant);
+  border: 1.75px solid var(--color-primary);
   resize: none;
   color: var(--color-white);
+}
+
+.contact__submit-btn {
+  border: 1px solid var(--color-primary);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+  border-radius: 0.35rem;
+
+  .contact__submit-text {
+    font-weight: lighter;
+    font-size: 0.85rem;
+    position: relative;
+    color: var(--color-primary);
+  }
+}
+
+.contact__submit-btn:hover {
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+  cursor: pointer;
+  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+  border-radius: 0.35rem;
+
+  .contact__submit-text {
+    font-weight: lighter;
+    font-size: 0.85rem;
+    position: relative;
+    color: var(--color-white);
+  }
 }
 
 /* ==== Meda Queries (Tablet) ==== */

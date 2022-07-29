@@ -107,13 +107,17 @@ const Contact = () => {
             required
             variants={textAnimate}
           ></motion.textarea>
-          <motion.button
-            type="submit"
-            className="btn btn-primary"
-            variants={btnAnimate}
-          >
-            Send Message
-          </motion.button>
+          <div>
+            <motion.button
+              type="submit"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="contact__submit-btn"
+              variants={btnAnimate}
+            >
+              <font className="contact__submit-text">Send Message</font>
+            </motion.button>
+          </div>
         </form>
       </div>
     </motion.section>

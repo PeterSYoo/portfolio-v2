@@ -90,7 +90,7 @@ const Footer = () => {
             className="footer__resume-btn"
             variants={btnAnimate}
           >
-            <font className="footer__resume-text">Resume</font>
+            <font className="footer__resume-text">Resumé</font>
           </motion.button>
         </a>
         <motion.a

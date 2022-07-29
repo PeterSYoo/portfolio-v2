@@ -38,7 +38,7 @@ footer a {
 
 .footer__resume-btn {
   margin-top: 0.3rem;
-  border: 1px solid #85b5e2;
+  border: 1px solid var(--color-orange);
   background-color: transparent;
   cursor: pointer;
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
@@ -48,13 +48,13 @@ footer a {
     font-weight: lighter;
     font-size: 0.85rem;
     position: relative;
-    color: #85b5e2;
+    color: var(--color-orange);
   }
 }
 
 .footer__resume-btn:hover {
-  border: 1px solid #85b5e2;
-  background-color: #85b5e2;
+  border: 1px solid var(--color-orange);
+  background-color: var(--color-orange);
   cursor: pointer;
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   border-radius: 0.35rem;
@@ -63,15 +63,8 @@ footer a {
     font-weight: lighter;
     font-size: 0.85rem;
     position: relative;
-    color: #ffffff;
+    color: var(--color-white);
   }
-}
-
-.footer__resume-text {
-  font-weight: 200;
-  font-size: 0.85rem;
-  position: relative;
-  color: #85b5e2;
 }
 
 .footer__linkedin-btn,

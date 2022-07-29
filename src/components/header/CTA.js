@@ -39,7 +39,7 @@ const CTA = () => {
           className="cta__resume-btn"
           variants={btnAnimate}
         >
-          <font className="cta__resume-text">Resume</font>
+          <font className="cta__resume-text">Resumé</font>
         </motion.button>
       </a>
     </div>
