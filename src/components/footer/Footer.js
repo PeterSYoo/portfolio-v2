@@ -2,12 +2,14 @@ import './footer.scss';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import RESUME from '../../assets/peteryoo-resume.pdf';
+import LOGO from '../../assets/images/py-logo.png';
 
 const Footer = () => {
   return (
     <footer>
       <a href="#" className="footer__logo">
-        <img src="https://i.imgur.com/93HQrPY.png" alt="logo" />
+        <img src={LOGO} alt="logo" />
       </a>
 
       <ul className="permalinks">
@@ -29,11 +31,7 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a
-          href="https://docs.google.com/document/d/e/2PACX-1vStMRPgw3QKH7q59KYge2Rga2g8rEp4hPZ_kH2TUBjuY9W5CANQ3kGCqFf__U1sTMbbd5yCBMGqVW9_/pub"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={RESUME} target="_blank" rel="noreferrer">
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}

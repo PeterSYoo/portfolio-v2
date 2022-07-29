@@ -5,6 +5,7 @@ import HeaderSocials from './HeaderSocials';
 import { motion } from 'framer-motion';
 import { BsFillMouseFill } from 'react-icons/bs';
 import AVATAR from '../../assets/images/py-avatar.png';
+import LOGO from '../../assets/images/py-logo.png';
 
 const Header = () => {
   return (
@@ -20,14 +21,13 @@ const Header = () => {
       <Particle />
       <div className="container header__container">
         <div className="py-logo">
-          <img src="https://i.imgur.com/93HQrPY.png" alt="logo" />
+          <img src={LOGO} alt="logo" />
           <div className="socials__title">
             <HeaderSocials />
             <h3 className="text-white">Fullstack Developer</h3>
           </div>
         </div>
         <div className="me">
-          {/* <img src="https://i.imgur.com/WEtpP6J.png" alt="me" /> */}
           <img src={AVATAR} alt="me" />
         </div>
       </div>

@@ -1,5 +1,6 @@
 import './about.scss';
 import { motion } from 'framer-motion';
+import QUOTE from '../../assets/images/quote-bg.png';
 
 const About = () => {
   return (
@@ -10,11 +11,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-quote">
-            <img
-              src="https://i.imgur.com/Aws4IOA.png"
-              alt="quote"
-              className="quote__bg"
-            />
+            <img src={QUOTE} alt="quote" className="quote__bg" />
           </div>
         </div>
         <div className="about__content">
