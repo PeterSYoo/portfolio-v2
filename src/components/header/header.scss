@@ -183,6 +183,11 @@ header {
     margin: 0 0 0 -6rem;
   }
 
+  .socials__title > h3 {
+    margin-top: -0.5rem;
+    font-weight: 200;
+  }
+
   .header__socials::after {
     display: none;
   }
