@@ -2,7 +2,7 @@ import './footer.scss';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import RESUME from '../../assets/peter_yoo-resume.pdf';
+import RESUME from '../../assets/peteryoo-resume.pdf';
 import LOGO from '../../assets/images/py-logo.png';
 
 const Footer = () => {
