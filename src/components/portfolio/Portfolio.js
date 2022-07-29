@@ -50,6 +50,8 @@ const data = [
   {
     id: 1,
     image: CODEJOURNAL,
+    description:
+      'React, TypeScript, Redux, ESBuild, Axios, localForage, Monaco Editor, React MD Editor, Immer, Lerna',
     title: 'Code Journal',
     github: 'https://github.com/PeterSYoo/code-journal',
     demo: '',
@@ -57,6 +59,7 @@ const data = [
   {
     id: 2,
     image: TASKTRACKER,
+    description: 'Python, JavaScript, Django, PostgreSQL, AWS, Materialize',
     title: 'Task Tracker',
     github: 'https://github.com/PeterSYoo/task_tracker',
     demo: 'https://task-tracker-peter.herokuapp.com/',
@@ -64,6 +67,7 @@ const data = [
   {
     id: 3,
     image: FINCHCOLLECTOR,
+    description: 'Python, JavaScript, Django, PostgreSQL, AWS, Materialize',
     title: 'Finch Collector',
     github: 'https://github.com/PeterSYoo/finch_collector',
     demo: 'https://finch-collector-py.herokuapp.com/',
@@ -71,6 +75,7 @@ const data = [
   {
     id: 4,
     image: GREETR,
+    description: 'JavaScript, jQuery',
     title: 'Greetr Library/Framework',
     github: 'https://github.com/PeterSYoo/greetr-framework',
     demo: '',
@@ -78,6 +83,7 @@ const data = [
   {
     id: 5,
     image: SKATEREACT,
+    description: 'JavaScript, MongoDB, EJS, React, Node.js',
     title: 'Skate React - Lead Frontend Developer',
     github: 'https://github.com/abacqu/skate-shop-frontend',
     demo: 'https://skate-react.netlify.app/',
@@ -85,6 +91,7 @@ const data = [
   {
     id: 6,
     image: TTEOKBOWL,
+    description: 'JavaScript, jQuery, Node.js, Mongoose, MongoDB, EJS',
     title: 'Tteok Bowl',
     github: 'https://github.com/PeterSYoo/tteokBowl',
     demo: 'https://warm-brook-32210.herokuapp.com/',
@@ -92,6 +99,7 @@ const data = [
   {
     id: 7,
     image: RANDOMLIT,
+    description: 'JavaScript, jQuery, ajax, Google Books API',
     title: 'Random Lit',
     github: 'https://github.com/PeterSYoo/randomBookGenreGenerator',
     demo: 'https://randomlit.netlify.app/',
@@ -105,7 +113,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, github, demo }) => {
+        {data.map(({ id, image, description, title, github, demo }) => {
           return (
             <motion.article
               key={id}
@@ -123,6 +131,7 @@ const Portfolio = () => {
                 <img src={image} alt={title} />
               </motion.div>
               <motion.h3 variants={textAnimate}>{title}</motion.h3>
+              <motion.h4 variants={textAnimate}>{description}</motion.h4>
               <div className="portfolio__item-cta">
                 <a href={github} target="_blank" rel="noreferrer">
                   <motion.button
