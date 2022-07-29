@@ -4,6 +4,7 @@ import './header.scss';
 import HeaderSocials from './HeaderSocials';
 import { motion } from 'framer-motion';
 import { BsFillMouseFill } from 'react-icons/bs';
+import AVATAR from '../../assets/images/py-avatar.png';
 
 const Header = () => {
   return (
@@ -26,7 +27,8 @@ const Header = () => {
           </div>
         </div>
         <div className="me">
-          <img src="https://i.imgur.com/WEtpP6J.png" alt="me" />
+          {/* <img src="https://i.imgur.com/WEtpP6J.png" alt="me" /> */}
+          <img src={AVATAR} alt="me" />
         </div>
       </div>
       <a href="#contact" className="scroll__down">
