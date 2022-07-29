@@ -17,6 +17,10 @@ footer a {
   display: inline-block;
 }
 
+.footer__logo > img {
+  width: 150px;
+}
+
 .permalinks {
   display: flex;
   flex-wrap: wrap;

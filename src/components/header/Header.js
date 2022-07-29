@@ -18,7 +18,6 @@ const Header = () => {
     >
       <Particle />
       <div className="container header__container">
-        <CTA />
         <div className="py-logo">
           <img src="https://i.imgur.com/93HQrPY.png" alt="logo" />
           <div className="socials__title">

@@ -1,15 +1,17 @@
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import CTA from './CTA';
 
 const HeaderSocials = () => {
   return (
     <div className="header__socials">
+      <CTA />
       <motion.a
         href="https://www.linkedin.com/in/petersyoo/"
         target="_blank"
         rel="noopener noreferrer"
-        whileHover={{ scale: 1.1 }}
+        // whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
         <BsLinkedin />
@@ -18,7 +20,7 @@ const HeaderSocials = () => {
         href="https://github.com/PeterSYoo"
         target="_blank"
         rel="noopener noreferrer"
-        whileHover={{ scale: 1.1 }}
+        // whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
         <FaGithub />

@@ -32,9 +32,17 @@ const About = () => {
             learning new things.
           </p>
 
-          <a href="#contact" className="btn btn-primary" id="lets__talk">
-            Let's Talk
-          </a>
+          <div className="contact__me">
+            <a href="#contact" target="_blank" rel="norefererr">
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="contact__me-btn"
+              >
+                <font className="contact__me-text">Contact Me</font>
+              </motion.button>
+            </a>
+          </div>
         </div>
       </div>
     </section>

@@ -38,6 +38,48 @@
   color: var(--color-white);
 }
 
+.contact__me {
+  margin-top: -0.4rem;
+  gap: 21.5rem;
+}
+
+.contact__me-btn {
+  border: 1px solid #85b5e2;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 0.5rem;
+
+  .contact__me-text {
+    font-weight: bold;
+    font-size: 0.85rem;
+    position: relative;
+    color: #85b5e2;
+  }
+}
+
+.contact__me-btn:hover {
+  border: 1px solid #85b5e2;
+  background-color: #85b5e2;
+  cursor: pointer;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 0.5rem;
+
+  .contact__me-text {
+    font-weight: bold;
+    font-size: 0.85rem;
+    position: relative;
+    color: #ffffff;
+  }
+}
+
+.contact__me-text {
+  font-weight: 200;
+  font-size: 0.85rem;
+  position: relative;
+  color: #252422;
+}
+
 /* ==== Meda Queries (Custom) ==== */
 @media screen and (max-width: 1387px) {
   .about__container {
@@ -67,8 +109,9 @@
     margin: 1rem 0 1.5rem;
   }
 
-  #lets__talk {
-    margin-left: calc(50% - 3rem);
+  .contact__me {
+    margin-top: 3rem;
+    margin-left: calc(50% - 4rem);
   }
 }
 
@@ -101,8 +144,9 @@
     margin: 1rem 0 1.5rem;
   }
 
-  #lets__talk {
-    margin-left: calc(50% - 3rem);
+  .contact__me {
+    margin-top: 3rem;
+    margin-left: calc(50% - 3.7rem);
   }
 }
 
@@ -134,7 +178,7 @@
     margin: 1.5rem 0;
   }
 
-  #lets__talk {
+  .contact__me {
     margin-left: calc(50% - 23.5rem);
   }
 }
@@ -167,8 +211,8 @@
     margin: 1.5rem 0;
   }
 
-  #lets__talk {
-    margin-left: calc(50% - 21.5rem);
+  .contact__me {
+    margin-left: calc(50% - 20.5rem);
   }
 }
 
@@ -200,7 +244,7 @@
     margin: 1.5rem 0;
   }
 
-  #lets__talk {
+  .contact__me {
     margin-left: calc(50% - 11.5rem);
   }
 }

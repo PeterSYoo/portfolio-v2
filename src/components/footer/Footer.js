@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <a href="#" className="footer__logo">
-        Peter Yoo
+        <img src="https://i.imgur.com/93HQrPY.png" alt="logo" />
       </a>
 
       <ul className="permalinks">
