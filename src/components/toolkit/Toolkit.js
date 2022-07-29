@@ -1,15 +1,50 @@
 import './toolkit.scss';
 import { CgCheckR } from 'react-icons/cg';
+import { motion, Variants } from 'framer-motion';
+
+const imageAnimate = {
+  offScreen: { x: -100, opacity: 0 },
+  onScreen: {
+    x: 0,
+    opacity: 1,
+    rotate: [0, 10, 0],
+    transition: { type: 'spring', bounce: 0.4, duration: 1 },
+  },
+};
+
+const btnAnimate = {
+  offScreen: { x: -100, opacity: 0 },
+  onScreen: {
+    x: 0,
+    opacity: 1,
+    transition: { type: 'spring', bounce: 0.4, duration: 1 },
+  },
+};
+
+const textAnimate = {
+  offScreen: { y: 100, opacity: 0 },
+  onScreen: {
+    y: 0,
+    opacity: 1,
+    transition: { type: 'spring', bounce: 0.4, duration: 1 },
+  },
+};
 
 const Toolkit = () => {
   return (
-    <section id="toolkit">
-      <h5>What Skills I Have</h5>
-      <h2>My toolkit</h2>
+    <motion.section
+      id="toolkit"
+      initial={'offScreen'}
+      whileInView={'onScreen'}
+      viewport={{ once: false, amount: 0.2 }}
+      transition={{ staggerChildren: 0.1 }}
+    >
+      <motion.h5 variants={textAnimate}>What Skills I Have</motion.h5>
+      <motion.h2 variants={textAnimate}>My toolkit</motion.h2>
       <div className="container toolkit__container">
-        <div className="toolkit__frontend">
-          <h3>Frontend Development</h3>
-          <div className="toolkit__content">
+        <motion.div className="toolkit__frontend" variants={btnAnimate}>
+          <motion.h3 variants={textAnimate}>Frontend Development</motion.h3>
+          <motion.div className="toolkit__content" variants={btnAnimate}>
             <article className="toolkit__details">
               <CgCheckR className="toolkit__details-icon" />
               <div>
@@ -40,12 +75,12 @@ const Toolkit = () => {
                 <h4>React</h4>
               </div>
             </article>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         {/* END OF FRONTEND */}
-        <div className="toolkit__backend">
-          <h3>Backend Development</h3>
-          <div className="toolkit__content">
+        <motion.div className="toolkit__backend" variants={btnAnimate}>
+          <motion.h3 variants={textAnimate}>Backend Development</motion.h3>
+          <motion.div className="toolkit__content" variants={btnAnimate}>
             <article className="toolkit__details">
               <CgCheckR className="toolkit__details-icon" />
               <div>
@@ -88,10 +123,10 @@ const Toolkit = () => {
                 <h4>ExpressJS</h4>
               </div>
             </article>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

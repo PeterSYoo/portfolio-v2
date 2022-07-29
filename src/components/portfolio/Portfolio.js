@@ -13,18 +13,18 @@ const imageAnimate = {
   onScreen: {
     x: 0,
     opacity: 1,
-    rotate: [0, 10, 0],
-    transition: { type: 'spring', bounce: 0.4, duration: 1 },
+    rotate: [0, 5, 0],
+    transition: { type: 'spring', bounce: 0.4, duration: 0.5 },
   },
 };
 
-const btnAnimate = {
+const bgAnimate = {
   offScreen: { x: -100, opacity: 0 },
   onScreen: {
     x: 0,
     opacity: 1,
     rotate: [0, 10, 0],
-    transition: { type: 'spring', bounce: 0.4, duration: -2 },
+    transition: { type: 'spring', bounce: 0.4, duration: -1 },
   },
 };
 
@@ -34,6 +34,15 @@ const textAnimate = {
     y: 0,
     opacity: 1,
     transition: { type: 'spring', bounce: 0.4, duration: 1 },
+  },
+};
+
+const btnAnimate = {
+  offScreen: { y: 100, opacity: 0 },
+  onScreen: {
+    y: 0,
+    opacity: 1,
+    transition: { type: 'spring', bounce: 0.4, duration: 0.25 },
   },
 };
 
@@ -103,6 +112,7 @@ const Portfolio = () => {
               className="portfolio__item"
               initial={'offScreen'}
               whileInView={'onScreen'}
+              variants={bgAnimate}
               viewport={{ once: false, amount: 0.2 }}
               transition={{ staggerChildren: 0.1 }}
             >
