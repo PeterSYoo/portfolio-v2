@@ -22,7 +22,7 @@ const Header = () => {
           <img src="https://i.imgur.com/93HQrPY.png" alt="logo" />
           <div className="socials__title">
             <HeaderSocials />
-            <h3 className="text-white">software engineer</h3>
+            <h3 className="text-white">Fullstack Developer</h3>
           </div>
         </div>
         <div className="me">
