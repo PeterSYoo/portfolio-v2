@@ -82,37 +82,20 @@ header {
 }
 
 /* ==== Scroll Down ==== */
-.scroll__down {
-  position: absolute;
-  // right: -2.3rem;
-  bottom: 2.5rem;
-  // transform: rotate(90deg);
-  left: calc(50% - 0.8rem);
-  color: #85b5e2;
-}
 
 .scroll__down-icon {
   position: absolute;
   // right: -2.3rem;
-  bottom: 1rem;
+  bottom: 3rem;
   // transform: rotate(90deg);
   left: calc(50% - 0.8rem);
   color: #85b5e2;
-}
-
-.scroll__down:hover {
-  position: absolute;
-  // right: -2.3rem;
-  bottom: 2.5rem;
-  // transform: rotate(90deg);
-  left: calc(50% - 0.8rem);
-  color: var(--color-white);
 }
 
 .scroll__down-icon:hover {
   position: absolute;
   // right: -2.3rem;
-  bottom: 1rem;
+  bottom: 3rem;
   // transform: rotate(90deg);
   left: calc(50% - 0.8rem);
   color: var(--color-white);
