@@ -59,12 +59,12 @@ const Header = () => {
           <motion.img src={AVATAR} alt="me" variants={imageAnimate} />
         </div>
       </div>
-      <motion.div variants={imageAnimate}>
+      <motion.div variants={textAnimate}>
         <a href="#contact" className="scroll__down">
           Scroll Down
         </a>
       </motion.div>
-      <motion.div variants={textAnimate}>
+      <motion.div variants={btnAnimate}>
         <BsFillMouseFill className="scroll__down-icon" />
       </motion.div>
     </motion.header>
