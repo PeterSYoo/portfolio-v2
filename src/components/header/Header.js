@@ -3,6 +3,7 @@ import './header.scss';
 import HeaderSocials from './HeaderSocials';
 import { motion } from 'framer-motion';
 import { BsFillMouseFill } from 'react-icons/bs';
+import { CgScrollV } from 'react-icons/cg';
 import AVATAR from '../../assets/images/py-avatar.png';
 import LOGO from '../../assets/images/py-logo.png';
 
@@ -59,12 +60,9 @@ const Header = () => {
         </div>
       </div>
       <motion.div variants={textAnimate}>
-        <a href="#contact" className="scroll__down">
-          Scroll Down
+        <a href="#contact">
+          <BsFillMouseFill className="scroll__down-icon" />
         </a>
-      </motion.div>
-      <motion.div variants={btnAnimate}>
-        <BsFillMouseFill className="scroll__down-icon" />
       </motion.div>
     </motion.header>
   );
