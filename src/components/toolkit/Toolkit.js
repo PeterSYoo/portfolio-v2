@@ -66,6 +66,12 @@ const Toolkit = () => {
             <article className="toolkit__details">
               <CgCheckR className="toolkit__details-icon" />
               <div>
+                <h4>TypeScript</h4>
+              </div>
+            </article>
+            <article className="toolkit__details">
+              <CgCheckR className="toolkit__details-icon" />
+              <div>
                 <h4>jQuery</h4>
               </div>
             </article>

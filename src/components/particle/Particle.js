@@ -100,7 +100,7 @@ const Particle = () => {
             grab: {
               distance: 400,
               line_linked: {
-                opacity: 1,
+                opacity: 0.5,
               },
             },
             bubble: {
@@ -111,8 +111,8 @@ const Particle = () => {
               speed: 3,
             },
             repulse: {
-              distance: 150,
-              duration: 0.4,
+              distance: 350,
+              duration: 1,
             },
             push: {
               particles_nb: 4,
