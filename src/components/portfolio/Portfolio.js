@@ -6,7 +6,7 @@ import GREETR from '../../assets/images/greetr-thumb.png';
 import SKATEREACT from '../../assets/images/skatereact-thumb.png';
 import TTEOKBOWL from '../../assets/images/tteokbowl-thumb.png';
 import RANDOMLIT from '../../assets/images/randomlit-thumb.png';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const imageAnimate = {
   offScreen: { x: -100, opacity: 0 },

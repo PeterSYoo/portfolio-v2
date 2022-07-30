@@ -2,7 +2,7 @@ import './contact.scss';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { MdOutlineMail } from 'react-icons/md';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const imageAnimate = {
   offScreen: { x: -100, opacity: 0 },

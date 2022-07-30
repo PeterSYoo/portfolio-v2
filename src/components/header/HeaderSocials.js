@@ -1,6 +1,6 @@
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import CTA from './CTA';
 
 const imageAnimate = {

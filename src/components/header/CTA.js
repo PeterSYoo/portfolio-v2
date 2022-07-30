@@ -1,5 +1,5 @@
 import RESUME from '../../assets/peteryoo-resume.pdf';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const imageAnimate = {
   offScreen: { x: -100, opacity: 0 },

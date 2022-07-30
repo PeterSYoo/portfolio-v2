@@ -5,7 +5,7 @@ import { ImUser } from 'react-icons/im';
 import { GiToolbox } from 'react-icons/gi';
 import { ImBriefcase } from 'react-icons/im';
 import { AiFillMessage } from 'react-icons/ai';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const btnAnimate = {
   offScreen: { x: -100, opacity: 0 },

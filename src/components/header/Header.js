@@ -1,8 +1,7 @@
 import Particle from '../particle/Particle';
-import CTA from './CTA';
 import './header.scss';
 import HeaderSocials from './HeaderSocials';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { BsFillMouseFill } from 'react-icons/bs';
 import AVATAR from '../../assets/images/py-avatar.png';
 import LOGO from '../../assets/images/py-logo.png';

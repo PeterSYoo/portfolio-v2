@@ -1,6 +1,6 @@
 import './toolkit.scss';
 import { CgCheckR } from 'react-icons/cg';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const imageAnimate = {
   offScreen: { x: -100, opacity: 0 },

@@ -1,5 +1,5 @@
 import './about.scss';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import QUOTE from '../../assets/images/quote-bg.png';
 
 const imageAnimate = {
