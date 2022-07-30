@@ -37,6 +37,15 @@ const textAnimate = {
   },
 };
 
+const text2Animate = {
+  offScreen: { y: 100, opacity: 0 },
+  onScreen: {
+    y: 0,
+    opacity: 1,
+    transition: { type: 'spring', bounce: 0.4, duration: 2 },
+  },
+};
+
 const btnAnimate = {
   offScreen: { x: 100, opacity: 0 },
   onScreen: {
@@ -150,7 +159,7 @@ const Portfolio = () => {
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       className="portfolio__demo-btn"
-                      variants={btnAnimate}
+                      variants={text2Animate}
                     >
                       <font className="portfolio__demo-text">Live Demo</font>
                     </motion.button>
