@@ -22,7 +22,7 @@
 .contact__option {
   background: var(--color-bg-variant);
   padding: 1.2rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   text-align: center;
   border: 1px solid transparent;
   transition: var(--transition);
@@ -55,7 +55,7 @@ input,
 textarea {
   width: 100%;
   padding: 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   background: transparent;
   border: 1.75px solid var(--color-primary);
   resize: none;

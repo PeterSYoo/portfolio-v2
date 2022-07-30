@@ -43,6 +43,7 @@ const Toolkit = () => {
       <motion.h2 variants={textAnimate}>My toolkit</motion.h2>
       <div className="container toolkit__container">
         <motion.div className="toolkit__frontend" variants={btnAnimate}>
+          <div className="frontend__rotate"> </div>
           <motion.h3 variants={textAnimate}>Frontend Development</motion.h3>
           <motion.div className="toolkit__content" variants={btnAnimate}>
             <article className="toolkit__details">
