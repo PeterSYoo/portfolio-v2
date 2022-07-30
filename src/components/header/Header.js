@@ -59,7 +59,7 @@ const Header = () => {
           <motion.img src={AVATAR} alt="me" variants={imageAnimate} />
         </div>
       </div>
-      <motion.div variants={btnAnimate}>
+      <motion.div variants={textAnimate}>
         <a href="#contact">
           <BsFillMouseFill className="scroll__down-icon" />
         </a>
