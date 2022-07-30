@@ -175,4 +175,22 @@ header {
   .header__socials::after {
     display: none;
   }
+
+  .scroll__down-icon {
+    position: absolute;
+    // right: -2.3rem;
+    bottom: 5rem;
+    // transform: rotate(90deg);
+    left: calc(50% - 0.8rem);
+    color: #85b5e2;
+  }
+
+  .scroll__down-icon:hover {
+    position: absolute;
+    // right: -2.3rem;
+    bottom: 5rem;
+    // transform: rotate(90deg);
+    left: calc(50% - 0.8rem);
+    color: var(--color-white);
+  }
 }
