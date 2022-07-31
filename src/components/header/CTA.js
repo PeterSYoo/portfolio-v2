@@ -1,4 +1,4 @@
-import RESUME from '../../assets/peteryoo-resume.pdf';
+import RESUME from '../../assets/peter_yoo-resume.pdf';
 import { motion } from 'framer-motion';
 
 const imageAnimate = {
