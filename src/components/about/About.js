@@ -52,15 +52,12 @@ const About = () => {
           <motion.p variants={textAnimate}>
             Hi! My name is Peter and I’ve fallen in love with coding. I come
             from an art background, I studied illustration in college and have
-            worked professionally as a storyboard artist. Tech has always been a
-            part of my artist's journey. I built my own websites in basic HTML
-            while doing graphic design as a teen, and I fell in love with both
-            the coding and design side. I’d spend countless hours just tinkering
-            away in HTML and trying new things, looking at source codes from
-            other websites. I have an eye for minimalist design that's sleek and
-            professional and I enjoy both the frontend and data side of coding.
-            I'm always curious about new technologies and have a passion for
-            learning new things.
+            worked professionally as a storyboard artist. I started my coding
+            journey back in March 2022 when I was first introduced to JavaScript
+            and I haven't stopped running since. I have an eye for minimalist
+            design that's sleek and professional and I enjoy both the frontend
+            and backend of coding. I'm always curious about new technologies and
+            have a passion for learning new things.
           </motion.p>
 
           <div className="contact__me">
