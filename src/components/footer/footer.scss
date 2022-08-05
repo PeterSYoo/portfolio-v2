@@ -4,6 +4,8 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   margin-top: 7rem;
+  z-index: 1;
+  position: relative;
 }
 
 footer a {
@@ -15,10 +17,14 @@ footer a {
   font-weight: 500;
   margin-bottom: 2rem;
   display: inline-block;
+  z-index: 1;
+  position: relative;
 }
 
 .footer__logo > img {
   width: 150px;
+  z-index: 1;
+  position: relative;
 }
 
 .permalinks {
@@ -27,6 +33,8 @@ footer a {
   justify-content: center;
   gap: 2rem;
   margin: 0 auto 3rem;
+  z-index: 1;
+  position: relative;
 }
 
 .footer__socials {
@@ -34,6 +42,8 @@ footer a {
   justify-content: center;
   gap: 3rem;
   margin-bottom: 4rem;
+  z-index: 1;
+  position: relative;
 }
 
 .footer__resume-btn {
@@ -43,12 +53,16 @@ footer a {
   cursor: pointer;
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   border-radius: 0.35rem;
+  z-index: 1;
+  position: relative;
 
   .footer__resume-text {
     font-weight: lighter;
     font-size: 0.85rem;
     position: relative;
     color: var(--color-orange);
+    z-index: 1;
+    position: relative;
   }
 }
 
@@ -58,12 +72,16 @@ footer a {
   cursor: pointer;
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   border-radius: 0.35rem;
+  z-index: 1;
+  position: relative;
 
   .footer__resume-text {
     font-weight: lighter;
     font-size: 0.85rem;
     position: relative;
     color: var(--color-white);
+    z-index: 1;
+    position: relative;
   }
 }
 
@@ -71,16 +89,22 @@ footer a {
 .footer__github-btn {
   color: var(--color-primary);
   font-size: 2rem;
+  z-index: 1;
+  position: relative;
 }
 
 .footer__linkedin-btn:hover,
 .footer__github-btn:hover {
   color: var(--color-white);
+  z-index: 1;
+  position: relative;
 }
 
 .footer__copyright {
   margin-bottom: 4rem;
   color: var(--color-primary);
+  z-index: 1;
+  position: relative;
 }
 
 /* ==== Meda Queries (Mobile) ==== */
@@ -88,9 +112,13 @@ footer a {
   .permalinks {
     flex-direction: column;
     gap: 1.5rem;
+    z-index: 1;
+    position: relative;
   }
 
   .footer__socials {
     margin-bottom: 2.6rem;
+    z-index: 1;
+    position: relative;
   }
 }

@@ -4,6 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 import RESUME from '../../assets/peter_yoo-resume.pdf';
 import LOGO from '../../assets/images/py-logo.png';
 import { motion } from 'framer-motion';
+import ParticleFooter from '../particle-footer/ParticleFooter';
 
 const imageAnimate = {
   offScreen: { x: -100, opacity: 0 },
@@ -53,7 +54,7 @@ const Footer = () => {
       <a href="#" className="footer__logo">
         <motion.img src={LOGO} alt="logo" variants={imageAnimate} />
       </a>
-
+      <ParticleFooter />
       <ul className="permalinks">
         <li>
           <motion.a href="#" variants={textAnimate}>
