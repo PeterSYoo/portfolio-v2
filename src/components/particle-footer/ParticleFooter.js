@@ -39,7 +39,7 @@ const ParticleFooter = () => {
               color: '#FFFFFF',
             },
             polygon: {
-              sides: 3,
+              sides: 12,
             },
           },
           opacity: {
