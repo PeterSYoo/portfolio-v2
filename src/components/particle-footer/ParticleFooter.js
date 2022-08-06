@@ -23,7 +23,7 @@ const ParticleFooter = () => {
         fullScreen: { enable: false },
         particles: {
           number: {
-            value: 80,
+            value: 40,
             density: {
               enable: true,
               value_area: 1200,
@@ -39,7 +39,7 @@ const ParticleFooter = () => {
               color: '#FFFFFF',
             },
             polygon: {
-              sides: 12,
+              sides: 6,
             },
           },
           opacity: {
