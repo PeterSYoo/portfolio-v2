@@ -42,7 +42,7 @@ const Particle = () => {
               color: '#FFFFFF',
             },
             polygon: {
-              sides: 6,
+              sides: 4,
             },
           },
           opacity: {
