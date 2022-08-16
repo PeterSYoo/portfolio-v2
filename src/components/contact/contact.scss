@@ -45,6 +45,21 @@
 }
 
 /* ==== FORM ==== */
+.submitted {
+  background: var(--color-bg-variant);
+  padding: 3rem;
+  padding-bottom: 4rem;
+  border-radius: 1rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.submitted:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
 form {
   display: flex;
   flex-direction: column;

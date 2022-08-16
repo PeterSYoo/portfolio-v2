@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { MdOutlineMail } from 'react-icons/md';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 const imageAnimate = {
   offScreen: { x: -100, opacity: 0 },
@@ -33,6 +34,8 @@ const textAnimate = {
 };
 
 const Contact = () => {
+  const [submitted, setSubmitted] = useState(false);
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -48,9 +51,11 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setSubmitted(true);
         },
         (error) => {
           console.log(error.text);
+          setSubmitted(false);
         }
       );
 
@@ -85,40 +90,47 @@ const Contact = () => {
           </motion.article>
         </div>
         {/* END OF CONTACT OPTIONS */}
-        <form ref={form} onSubmit={sendEmail}>
-          <motion.input
-            type="text"
-            name="name"
-            placeholder="Your Full Name"
-            required
-            variants={textAnimate}
-          />
-          <motion.input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            variants={textAnimate}
-          />
-          <motion.textarea
-            name="message"
-            rows="7"
-            placeholder="Your Message"
-            required
-            variants={textAnimate}
-          ></motion.textarea>
-          <div>
-            <motion.button
-              type="submit"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="contact__submit-btn"
-              variants={btnAnimate}
-            >
-              <font className="contact__submit-text">Send Message</font>
-            </motion.button>
+        {submitted ? (
+          <div className="submitted">
+            <h1>Thank you!</h1>
+            <h3>I will respond as soon as possible!</h3>
           </div>
-        </form>
+        ) : (
+          <form ref={form} onSubmit={sendEmail}>
+            <motion.input
+              type="text"
+              name="name"
+              placeholder="Your Full Name"
+              required
+              variants={textAnimate}
+            />
+            <motion.input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              variants={textAnimate}
+            />
+            <motion.textarea
+              name="message"
+              rows="7"
+              placeholder="Your Message"
+              required
+              variants={textAnimate}
+            ></motion.textarea>
+            <div>
+              <motion.button
+                type="submit"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="contact__submit-btn"
+                variants={btnAnimate}
+              >
+                <font className="contact__submit-text">Send Message</font>
+              </motion.button>
+            </div>
+          </form>
+        )}
       </div>
     </motion.section>
   );
