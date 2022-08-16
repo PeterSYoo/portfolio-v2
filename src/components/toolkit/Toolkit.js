@@ -6,6 +6,7 @@ import { SiJavascript } from 'react-icons/si';
 import { SiTypescript } from 'react-icons/si';
 import { SiJquery } from 'react-icons/si';
 import { SiReact } from 'react-icons/si';
+import { SiTailwindcss } from 'react-icons/si';
 import { SiPython } from 'react-icons/si';
 import { SiMongodb } from 'react-icons/si';
 import { SiExpress } from 'react-icons/si';
@@ -82,6 +83,11 @@ const frontEndData = [
     icon: <SiReact className="toolkit__details-icon" />,
     name: 'React',
   },
+  {
+    id: 7,
+    icon: <SiTailwindcss className="toolkit__details-icon" />,
+    name: 'Tailwind CSS',
+  },
 ];
 
 const backEndData = [
@@ -119,6 +125,11 @@ const backEndData = [
     id: 7,
     icon: <SiPostgresql className="toolkit__details-icon" />,
     name: 'PostgreSQL',
+  },
+  {
+    id: 8,
+    icon: <CgCheckR className="toolkit__details-icon" />,
+    name: 'Sanity',
   },
 ];
 
