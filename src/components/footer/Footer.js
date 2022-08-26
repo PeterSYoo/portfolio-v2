@@ -94,6 +94,20 @@ const Footer = () => {
             <font className="footer__resume-text">Resumé</font>
           </motion.button>
         </a>
+        <a
+          href="https://peters-blog.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="footer__resume-btn"
+            variants={btnAnimate}
+          >
+            <font className="footer__resume-text">Blog</font>
+          </motion.button>
+        </a>
         <motion.a
           href="https://www.linkedin.com/in/petersyoo/"
           target="_blank"

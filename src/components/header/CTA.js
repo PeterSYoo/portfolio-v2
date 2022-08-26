@@ -32,16 +32,34 @@ const textAnimate = {
 const CTA = () => {
   return (
     <div className="cta">
-      <a href={RESUME} target="_blank" rel="noreferrer">
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="cta__resume-btn"
-          variants={btnAnimate}
+      <span>
+        <a href={RESUME} target="_blank" rel="noreferrer">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="cta__resume-btn"
+            variants={btnAnimate}
+          >
+            <font className="cta__resume-text">Resumé</font>
+          </motion.button>
+        </a>
+      </span>
+      <span>
+        <a
+          href="https://peters-blog.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
         >
-          <font className="cta__resume-text">Resumé</font>
-        </motion.button>
-      </a>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="cta__resume-btn"
+            variants={btnAnimate}
+          >
+            <font className="cta__resume-text">Blog</font>
+          </motion.button>
+        </a>
+      </span>
     </div>
   );
 };

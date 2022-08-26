@@ -3,9 +3,9 @@ import './header.scss';
 import HeaderSocials from './HeaderSocials';
 import { motion } from 'framer-motion';
 import { BsFillMouseFill } from 'react-icons/bs';
-import { CgScrollV } from 'react-icons/cg';
 import AVATAR from '../../assets/images/py-avatar.png';
 import LOGO from '../../assets/images/py-logo.png';
+import CTA from './CTA';
 
 const imageAnimate = {
   offScreen: { x: -100, opacity: 0 },
@@ -53,6 +53,9 @@ const Header = () => {
             <motion.h3 className="text-white" variants={textAnimate}>
               Fullstack Developer
             </motion.h3>
+          </div>
+          <div className="">
+            <CTA />
           </div>
         </div>
         <div className="me">

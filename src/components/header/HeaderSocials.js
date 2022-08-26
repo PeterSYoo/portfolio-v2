@@ -1,7 +1,6 @@
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import CTA from './CTA';
 
 const imageAnimate = {
   offScreen: { x: -100, opacity: 0 },
@@ -34,7 +33,6 @@ const textAnimate = {
 const HeaderSocials = () => {
   return (
     <div className="header__socials">
-      <CTA />
       <motion.a
         href="https://www.linkedin.com/in/petersyoo/"
         target="_blank"
