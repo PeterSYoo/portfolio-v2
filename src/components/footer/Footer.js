@@ -1,10 +1,10 @@
-import './footer.scss';
-import { BsLinkedin } from 'react-icons/bs';
-import { FaGithub } from 'react-icons/fa';
-import RESUME from '../../assets/peter_yoo-resume.pdf';
-import LOGO from '../../assets/images/py-logo.png';
-import { motion } from 'framer-motion';
-import ParticleFooter from '../particle-footer/ParticleFooter';
+import "./footer.scss";
+import { BsLinkedin } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
+import RESUME from "../../assets/peter-yoo-resume.pdf";
+import LOGO from "../../assets/images/py-logo.png";
+import { motion } from "framer-motion";
+import ParticleFooter from "../particle-footer/ParticleFooter";
 
 const imageAnimate = {
   offScreen: { x: -100, opacity: 0 },
@@ -12,7 +12,7 @@ const imageAnimate = {
     x: 0,
     opacity: 1,
     rotate: [0, 10, 0],
-    transition: { type: 'spring', bounce: 0.4, duration: 0.5 },
+    transition: { type: "spring", bounce: 0.4, duration: 0.5 },
   },
 };
 
@@ -21,7 +21,7 @@ const btnAnimate = {
   onScreen: {
     x: 0,
     opacity: 1,
-    transition: { type: 'spring', bounce: 0.4, duration: 1 },
+    transition: { type: "spring", bounce: 0.4, duration: 1 },
   },
 };
 
@@ -30,7 +30,7 @@ const btn2Animate = {
   onScreen: {
     x: 0,
     opacity: 1,
-    transition: { type: 'spring', bounce: 0.4, duration: 0.05 },
+    transition: { type: "spring", bounce: 0.4, duration: 0.05 },
   },
 };
 
@@ -39,15 +39,15 @@ const textAnimate = {
   onScreen: {
     y: 0,
     opacity: 1,
-    transition: { type: 'spring', bounce: 0.4, duration: 1 },
+    transition: { type: "spring", bounce: 0.4, duration: 1 },
   },
 };
 
 const Footer = () => {
   return (
     <motion.footer
-      initial={'offScreen'}
-      whileInView={'onScreen'}
+      initial={"offScreen"}
+      whileInView={"onScreen"}
       viewport={{ once: false, amount: 0.2 }}
       transition={{ staggerChildren: 0.1 }}
     >
