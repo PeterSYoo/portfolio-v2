@@ -45,70 +45,70 @@ const textAnimate = {
 
 const Footer = () => {
   return (
-    <motion.footer
+    <footer
       initial={'offScreen'}
       whileInView={'onScreen'}
       viewport={{ once: false, amount: 0.2 }}
       transition={{ staggerChildren: 0.1 }}
     >
       <a href="#" className="footer__logo">
-        <motion.img src={LOGO} alt="logo" variants={imageAnimate} />
+        <img src={LOGO} alt="logo" variants={imageAnimate} />
       </a>
       <ParticleFooter />
       <ul className="permalinks">
         <li>
-          <motion.a href="#" variants={textAnimate}>
+          <a href="#" variants={textAnimate}>
             Home
-          </motion.a>
+          </a>
         </li>
         <li>
-          <motion.a href="#about" variants={textAnimate}>
+          <a href="#about" variants={textAnimate}>
             About
-          </motion.a>
+          </a>
         </li>
         <li>
-          <motion.a href="#toolkit" variants={textAnimate}>
+          <a href="#toolkit" variants={textAnimate}>
             Toolkit
-          </motion.a>
+          </a>
         </li>
         <li>
-          <motion.a href="#portfolio" variants={textAnimate}>
+          <a href="#portfolio" variants={textAnimate}>
             Portfolio
-          </motion.a>
+          </a>
         </li>
         <li>
-          <motion.a href="#contact" variants={textAnimate}>
+          <a href="#contact" variants={textAnimate}>
             Contact
-          </motion.a>
+          </a>
         </li>
       </ul>
 
       <div className="footer__socials">
         <a href={RESUME} target="_blank" rel="noreferrer">
-          <motion.button
+          <button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             className="footer__resume-btn"
             variants={btnAnimate}
           >
             <font className="footer__resume-text">Resumé</font>
-          </motion.button>
+          </button>
         </a>
         <a
           href="https://peters-blog.vercel.app/"
           target="_blank"
           rel="noreferrer"
         >
-          <motion.button
+          <button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             className="footer__resume-btn"
             variants={btnAnimate}
           >
             <font className="footer__resume-text">Blog</font>
-          </motion.button>
+          </button>
         </a>
-        <motion.a
+        <a
           href="https://www.linkedin.com/in/petersyoo/"
           target="_blank"
           rel="noopener noreferrer"
@@ -116,8 +116,8 @@ const Footer = () => {
           variants={btn2Animate}
         >
           <BsLinkedin />
-        </motion.a>
-        <motion.a
+        </a>
+        <a
           href="https://github.com/PeterSYoo"
           target="_blank"
           rel="noopener noreferrer"
@@ -125,13 +125,13 @@ const Footer = () => {
           variants={btn2Animate}
         >
           <FaGithub />
-        </motion.a>
+        </a>
       </div>
 
-      <motion.div className="footer__copyright" variants={textAnimate}>
+      <div className="footer__copyright" variants={textAnimate}>
         <small>&copy; Peter Yoo. All rights reserved.</small>
-      </motion.div>
-    </motion.footer>
+      </div>
+    </footer>
   );
 };
 

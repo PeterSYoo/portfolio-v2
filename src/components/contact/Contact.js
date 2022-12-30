@@ -63,31 +63,31 @@ const Contact = () => {
   };
 
   return (
-    <motion.section
+    <section
       id="contact"
       initial={'offScreen'}
       whileInView={'onScreen'}
       viewport={{ once: false, amount: 0.2 }}
       transition={{ staggerChildren: 0.1 }}
     >
-      <motion.h5 variants={textAnimate}>Get In Touch</motion.h5>
-      <motion.h2 variants={textAnimate}>Contact Me</motion.h2>
+      <h5 variants={textAnimate}>Get In Touch</h5>
+      <h2 variants={textAnimate}>Contact Me</h2>
 
       <div className="container contact__container">
         <div className="contact__options">
-          <motion.article className="contact__option" variants={btnAnimate}>
+          <article className="contact__option" variants={btnAnimate}>
             <MdOutlineMail className="contact__option-icon" />
-            <motion.h4 variants={textAnimate}>Email</motion.h4>
-            <motion.h5 variants={textAnimate}>petersyoox@gmail.com</motion.h5>
-            <motion.a
+            <h4 variants={textAnimate}>Email</h4>
+            <h5 variants={textAnimate}>petersyoox@gmail.com</h5>
+            <a
               href="mailto:petersyoox@gmail.com"
               target="_blank"
               rel="noreferrer"
               variants={btnAnimate}
             >
               Send a message
-            </motion.a>
-          </motion.article>
+            </a>
+          </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
         {submitted ? (
@@ -97,29 +97,29 @@ const Contact = () => {
           </div>
         ) : (
           <form ref={form} onSubmit={sendEmail}>
-            <motion.input
+            <input
               type="text"
               name="name"
               placeholder="Your Full Name"
               required
               variants={textAnimate}
             />
-            <motion.input
+            <input
               type="email"
               name="email"
               placeholder="Your Email"
               required
               variants={textAnimate}
             />
-            <motion.textarea
+            <textarea
               name="message"
               rows="7"
               placeholder="Your Message"
               required
               variants={textAnimate}
-            ></motion.textarea>
+            ></textarea>
             <div>
-              <motion.button
+              <button
                 type="submit"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -127,12 +127,12 @@ const Contact = () => {
                 variants={btnAnimate}
               >
                 <font className="contact__submit-text">Send Message</font>
-              </motion.button>
+              </button>
             </div>
           </form>
         )}
       </div>
-    </motion.section>
+    </section>
   );
 };
 
