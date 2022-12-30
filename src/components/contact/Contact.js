@@ -2,7 +2,6 @@ import './contact.scss';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { MdOutlineMail } from 'react-icons/md';
-import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 const imageAnimate = {
