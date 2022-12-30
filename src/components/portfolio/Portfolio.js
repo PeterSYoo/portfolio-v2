@@ -73,7 +73,7 @@ const data = [
     id: 2,
     image: TICKERSAVER,
     description:
-      'An app that allows users to track the performance of stocks in real-time. Users can search for and add stocks to their dashboard, where they can monitor the winners and losers of the day. The app provides updates on the stock prices in real-time.',
+      'A stock tracking app that allows users to search for stocks, add them to their dashboard, and track them in real-time with updates on daily winners and losers.',
     technologies:
       'TypeScript, NextJS, NextAuth, Tailwind CSS, React Query, Formik, Yup, MongoDB, Mongoose, Finnhub Stock API, Cloudinary',
     title: 'Tickersaver',
