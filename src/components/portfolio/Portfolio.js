@@ -6,7 +6,9 @@ import GREETR from '../../assets/images/greetr-thumb.png';
 import SKATEREACT from '../../assets/images/skatereact-thumb.png';
 import TTEOKBOWL from '../../assets/images/tteokbowl-thumb.png';
 import RANDOMLIT from '../../assets/images/randomlit-thumb.png';
-import { motion } from 'framer-motion';
+import NUDOODLE from '../../assets/images/nudoodle-thumb.png';
+import TICKERSAVER from '../../assets/images/tickersaver-thumb.png';
+import TRIPGUIDE from '../../assets/images/tripguide-thumb.png';
 
 const imageAnimate = {
   offScreen: { x: -100, opacity: 0 },
@@ -58,6 +60,34 @@ const btnAnimate = {
 const data = [
   {
     id: 1,
+    image: NUDOODLE,
+    description:
+      'TypeScript, NextJS, NextAuth, Tailwind CSS, React Query, React Hook Form, Yup, MongoDB, Mongoose, Cloudinary, Canvas API',
+    title: 'Nudoodle',
+    github: 'https://github.com/PeterSYoo/doodlezilla-nextjs-tailwind',
+    demo: 'https://nudoodle.vercel.app/',
+  },
+  {
+    id: 2,
+    image: TICKERSAVER,
+    description:
+      'TypeScript, NextJS, NextAuth, Tailwind CSS, React Query, Formik, Yup, MongoDB, Mongoose, Finnhub Stock API, Cloudinary',
+    title: 'Tickersaver',
+    github: 'https://github.com/PeterSYoo/stocksaver-nextjs-tailwind',
+    demo: 'https://tickersaver.vercel.app/',
+  },
+  {
+    id: 3,
+    image: TRIPGUIDE,
+    description:
+      'TypeScript, NextJS, NextAuth, Tailwind CSS, React Query, Zustand, Formik, MongoDB, Mongoose',
+    title: 'Trip Guide',
+    github:
+      'https://github.com/PeterSYoo/Hotel-Booking-App-with-Nextjs-Typescript-and-TailwindCss',
+    demo: 'https://tripguide-mocha.vercel.app/',
+  },
+  {
+    id: 4,
     image: CODEJOURNAL,
     description:
       'React, TypeScript, Redux, ESBuild, Axios, localForage, Monaco Editor, React MD Editor, Immer, Lerna',
@@ -66,7 +96,7 @@ const data = [
     demo: '',
   },
   {
-    id: 2,
+    id: 5,
     image: TASKTRACKER,
     description: 'Python, JavaScript, Django, PostgreSQL, AWS, Materialize',
     title: 'Task Tracker',
@@ -74,7 +104,7 @@ const data = [
     demo: 'https://task-tracker-peter.herokuapp.com/',
   },
   {
-    id: 3,
+    id: 6,
     image: FINCHCOLLECTOR,
     description: 'Python, JavaScript, Django, PostgreSQL, AWS, Materialize',
     title: 'Finch Collector',
@@ -82,7 +112,7 @@ const data = [
     demo: 'https://finch-collector-py.herokuapp.com/',
   },
   {
-    id: 4,
+    id: 7,
     image: GREETR,
     description: 'JavaScript, jQuery',
     title: 'Greetr Library/Framework',
@@ -90,7 +120,7 @@ const data = [
     demo: '',
   },
   {
-    id: 5,
+    id: 8,
     image: SKATEREACT,
     description: 'JavaScript, MongoDB, EJS, React, Node.js',
     title: 'Skate React - Lead Frontend Developer',
@@ -98,7 +128,7 @@ const data = [
     demo: 'https://skate-react.netlify.app/',
   },
   {
-    id: 6,
+    id: 9,
     image: TTEOKBOWL,
     description: 'JavaScript, jQuery, Node.js, Mongoose, MongoDB, EJS',
     title: 'Tteok Bowl',
@@ -106,7 +136,7 @@ const data = [
     demo: 'https://warm-brook-32210.herokuapp.com/',
   },
   {
-    id: 7,
+    id: 10,
     image: RANDOMLIT,
     description: 'JavaScript, jQuery, ajax, Google Books API',
     title: 'Random Lit',
@@ -124,7 +154,7 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         {data.map(({ id, image, description, title, github, demo }) => {
           return (
-            <motion.article
+            <article
               key={id}
               className="portfolio__item"
               initial={'offScreen'}
@@ -133,40 +163,37 @@ const Portfolio = () => {
               viewport={{ once: false, amount: 0.2 }}
               transition={{ staggerChildren: 0.1 }}
             >
-              <motion.div
-                className="portfolio__item-image"
-                variants={imageAnimate}
-              >
+              <div className="portfolio__item-image" variants={imageAnimate}>
                 <img src={image} alt={title} />
-              </motion.div>
-              <motion.h3 variants={textAnimate}>{title}</motion.h3>
-              <motion.h4 variants={textAnimate}>{description}</motion.h4>
+              </div>
+              <h3 variants={textAnimate}>{title}</h3>
+              <h4 variants={textAnimate}>{description}</h4>
               <div className="portfolio__item-cta">
                 <a href={github} target="_blank" rel="noreferrer">
-                  <motion.button
+                  <button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     className="portfolio__github-btn"
                     variants={btnAnimate}
                   >
                     <font className="portfolio__github-text">Github</font>
-                  </motion.button>
+                  </button>
                 </a>
 
                 {demo ? (
                   <a href={demo} target="_blank" rel="noreferrer">
-                    <motion.button
+                    <button
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       className="portfolio__demo-btn"
                       variants={text2Animate}
                     >
                       <font className="portfolio__demo-text">Live Demo</font>
-                    </motion.button>
+                    </button>
                   </a>
                 ) : null}
               </div>
-            </motion.article>
+            </article>
           );
         })}
       </div>
