@@ -39,16 +39,18 @@
 }
 
 .contact__me {
-  margin-top: -0.4rem;
-  gap: 21.5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .contact__me-btn {
-  border: 1px solid #85b5e2;
+  padding: 0.25rem;
   background-color: transparent;
-  cursor: pointer;
-  padding: 1rem 1.5rem 1rem 1.5rem;
   border-radius: 0.5rem;
+  border: 1px solid #85b5e2;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  display: inline-block;
 
   .contact__me-text {
     font-weight: bold;
