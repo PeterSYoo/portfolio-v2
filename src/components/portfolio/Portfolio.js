@@ -83,10 +83,11 @@ const data = [
   {
     id: 3,
     image: TRIPGUIDE,
-    description: '',
+    description:
+      'A hotel booking app where users can book a place and checkout using stripe.',
     technologies:
       'TypeScript, NextJS, NextAuth, Tailwind CSS, React Query, Zustand, Formik, MongoDB, Mongoose',
-    title: 'Trip Guide',
+    title: 'TripGuide (wip)',
     github:
       'https://github.com/PeterSYoo/Hotel-Booking-App-with-Nextjs-Typescript-and-TailwindCss',
     demo: 'https://tripguide-mocha.vercel.app/',
