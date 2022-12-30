@@ -21,8 +21,7 @@
 }
 
 .portfolio__item:hover {
-  border-color: var(--color-primary);
-  background: transparent;
+  box-shadow: (2px 2px #85b5e2);
 }
 
 .portfolio__item-image {
@@ -36,7 +35,15 @@
 
 .portfolio__item h4 {
   margin: 0 0 0.5rem 0;
-  color: #6a7490;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  color: #b3b8c5;
+}
+
+.portfolio__item h5 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.8rem;
+  color: #86888b;
 }
 
 .portfolio__item-cta {

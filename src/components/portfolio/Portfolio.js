@@ -62,6 +62,8 @@ const data = [
     id: 1,
     image: NUDOODLE,
     description:
+      'A social media app where users can create drawings, share their drawings, like and comment on other user\u0027s drawings.',
+    technologies:
       'TypeScript, NextJS, NextAuth, Tailwind CSS, React Query, React Hook Form, Yup, MongoDB, Mongoose, Cloudinary, Canvas API',
     title: 'Nudoodle',
     github: 'https://github.com/PeterSYoo/doodlezilla-nextjs-tailwind',
@@ -152,50 +154,53 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, description, title, github, demo }) => {
-          return (
-            <article
-              key={id}
-              className="portfolio__item"
-              initial={'offScreen'}
-              whileInView={'onScreen'}
-              variants={bgAnimate}
-              viewport={{ once: false, amount: 0.2 }}
-              transition={{ staggerChildren: 0.1 }}
-            >
-              <div className="portfolio__item-image" variants={imageAnimate}>
-                <img src={image} alt={title} />
-              </div>
-              <h3 variants={textAnimate}>{title}</h3>
-              <h4 variants={textAnimate}>{description}</h4>
-              <div className="portfolio__item-cta">
-                <a href={github} target="_blank" rel="noreferrer">
-                  <button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="portfolio__github-btn"
-                    variants={btnAnimate}
-                  >
-                    <font className="portfolio__github-text">Github</font>
-                  </button>
-                </a>
-
-                {demo ? (
-                  <a href={demo} target="_blank" rel="noreferrer">
+        {data.map(
+          ({ id, image, description, title, github, demo, technologies }) => {
+            return (
+              <article
+                key={id}
+                className="portfolio__item"
+                initial={'offScreen'}
+                whileInView={'onScreen'}
+                variants={bgAnimate}
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{ staggerChildren: 0.1 }}
+              >
+                <div className="portfolio__item-image" variants={imageAnimate}>
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <h4>{description}</h4>
+                <h5>{technologies}</h5>
+                <div className="portfolio__item-cta">
+                  <a href={github} target="_blank" rel="noreferrer">
                     <button
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
-                      className="portfolio__demo-btn"
-                      variants={text2Animate}
+                      className="portfolio__github-btn"
+                      variants={btnAnimate}
                     >
-                      <font className="portfolio__demo-text">Live Demo</font>
+                      <font className="portfolio__github-text">Github</font>
                     </button>
                   </a>
-                ) : null}
-              </div>
-            </article>
-          );
-        })}
+
+                  {demo ? (
+                    <a href={demo} target="_blank" rel="noreferrer">
+                      <button
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className="portfolio__demo-btn"
+                        variants={text2Animate}
+                      >
+                        <font className="portfolio__demo-text">Live Demo</font>
+                      </button>
+                    </a>
+                  ) : null}
+                </div>
+              </article>
+            );
+          }
+        )}
       </div>
     </section>
   );
