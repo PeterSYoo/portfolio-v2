@@ -50,6 +50,8 @@
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .portfolio__github-btn {
@@ -57,8 +59,9 @@
   border: 1px solid var(--color-primary);
   background-color: transparent;
   cursor: pointer;
-  padding: 1rem 1.5rem 1rem 1.5rem;
-  border-radius: 0.35rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.1s ease-in-out;
 
   .portfolio__github-text {
     font-weight: lighter;
@@ -72,14 +75,15 @@
   border: 1px solid var(--color-primary);
   background-color: var(--color-primary);
   cursor: pointer;
-  padding: 1rem 1.5rem 1rem 1.5rem;
-  border-radius: 0.35rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-radius: 1.25rem;
+  transition: all 0.1s ease-in-out;
 
   .portfolio__github-text {
     font-weight: lighter;
     font-size: 1rem;
     position: relative;
-    color: var(--color-white);
+    color: var(--color-black);
   }
 }
 
@@ -88,8 +92,9 @@
   border: 1px solid var(--color-primary);
   background-color: transparent;
   cursor: pointer;
-  padding: 1rem 1.5rem 1rem 1.5rem;
-  border-radius: 0.35rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.1s ease-in-out;
 
   .portfolio__demo-text {
     font-weight: lighter;
@@ -103,14 +108,15 @@
   border: 1px solid var(--color-primary);
   background-color: var(--color-primary);
   cursor: pointer;
-  padding: 1rem 1.5rem 1rem 1.5rem;
-  border-radius: 0.35rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-radius: 1.25rem;
+  transition: all 0.1s ease-in-out;
 
   .portfolio__demo-text {
     font-weight: lighter;
     font-size: 1rem;
     position: relative;
-    color: var(--color-white);
+    color: var(--color-black);
   }
 }
 

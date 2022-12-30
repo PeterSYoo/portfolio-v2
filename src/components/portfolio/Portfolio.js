@@ -73,6 +73,8 @@ const data = [
     id: 2,
     image: TICKERSAVER,
     description:
+      'A tracking app that a user can search for stocks and add those stocks to their dashboard to be tracked. Updates winner and loser stocks for the day in real time.',
+    technologies:
       'TypeScript, NextJS, NextAuth, Tailwind CSS, React Query, Formik, Yup, MongoDB, Mongoose, Finnhub Stock API, Cloudinary',
     title: 'Tickersaver',
     github: 'https://github.com/PeterSYoo/stocksaver-nextjs-tailwind',
@@ -81,7 +83,8 @@ const data = [
   {
     id: 3,
     image: TRIPGUIDE,
-    description:
+    description: '',
+    technologies:
       'TypeScript, NextJS, NextAuth, Tailwind CSS, React Query, Zustand, Formik, MongoDB, Mongoose',
     title: 'Trip Guide',
     github:
@@ -92,55 +95,29 @@ const data = [
     id: 4,
     image: CODEJOURNAL,
     description:
-      'React, TypeScript, Redux, ESBuild, Axios, localForage, Monaco Editor, React MD Editor, Immer, Lerna',
+      'An app where users can keep a journal of their code snippets. Users can add or delete cells that contains a markdown editor or a code editor.',
+    technologies:
+      'TypeScript, React, Redux, ESBuild, Axios, localForage, Monaco Editor, React MD Editor, Immer, Lerna',
     title: 'Code Journal',
     github: 'https://github.com/PeterSYoo/code-journal',
     demo: '',
   },
   {
     id: 5,
-    image: TASKTRACKER,
-    description: 'Python, JavaScript, Django, PostgreSQL, AWS, Materialize',
-    title: 'Task Tracker',
-    github: 'https://github.com/PeterSYoo/task_tracker',
-    demo: 'https://task-tracker-peter.herokuapp.com/',
-  },
-  {
-    id: 6,
-    image: FINCHCOLLECTOR,
-    description: 'Python, JavaScript, Django, PostgreSQL, AWS, Materialize',
-    title: 'Finch Collector',
-    github: 'https://github.com/PeterSYoo/finch_collector',
-    demo: 'https://finch-collector-py.herokuapp.com/',
-  },
-  {
-    id: 7,
     image: GREETR,
-    description: 'JavaScript, jQuery',
+    description:
+      'A library that generates formal and informal greetings in either english or spanish.',
+    technologies: 'JavaScript, jQuery',
     title: 'Greetr Library/Framework',
     github: 'https://github.com/PeterSYoo/greetr-framework',
     demo: '',
   },
   {
-    id: 8,
-    image: SKATEREACT,
-    description: 'JavaScript, MongoDB, EJS, React, Node.js',
-    title: 'Skate React - Lead Frontend Developer',
-    github: 'https://github.com/abacqu/skate-shop-frontend',
-    demo: 'https://skate-react.netlify.app/',
-  },
-  {
-    id: 9,
-    image: TTEOKBOWL,
-    description: 'JavaScript, jQuery, Node.js, Mongoose, MongoDB, EJS',
-    title: 'Tteok Bowl',
-    github: 'https://github.com/PeterSYoo/tteokBowl',
-    demo: 'https://warm-brook-32210.herokuapp.com/',
-  },
-  {
-    id: 10,
+    id: 6,
     image: RANDOMLIT,
-    description: 'JavaScript, jQuery, ajax, Google Books API',
+    description:
+      'An app where a user can randomly generate a list of books by genre by consuming Google\u0027s Book API.',
+    technologies: 'JavaScript, jQuery, ajax, Google Books API',
     title: 'Random Lit',
     github: 'https://github.com/PeterSYoo/randomBookGenreGenerator',
     demo: 'https://randomlit.netlify.app/',
