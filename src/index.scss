@@ -9,7 +9,7 @@
 }
 
 :root {
-  --color-bg: #2e354b;
+  --color-bg: #424347;
   --color-bg-variant: #252422;
   --color-primary: #85b5e2;
   --color-orange: #e6a64d;
@@ -35,10 +35,10 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background: var(--color-bg);
+  background-color: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/images/bg_texture.png);
+  /*   background-image: url(../src/assets/images/bg_texture.png); */
 }
 
 /* General Styles */

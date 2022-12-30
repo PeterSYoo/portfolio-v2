@@ -17,11 +17,12 @@
   padding: 2.4rem 5rem;
   border-radius: 1rem;
   border: 1px solid transparent;
-  transform: var(--transition);
+  transition: all 0.05s ease-in-out;
 }
 
 .toolkit__container > div:hover {
   box-shadow: (2px 2px #85b5e2);
+  transition: all 0.05s ease-in-out;
 }
 
 .toolkit__container > div h3 {

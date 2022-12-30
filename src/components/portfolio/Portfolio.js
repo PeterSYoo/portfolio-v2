@@ -62,7 +62,7 @@ const data = [
     id: 1,
     image: NUDOODLE,
     description:
-      'A social media app where users can create drawings, share their drawings, like and comment on other user\u0027s drawings.',
+      'A social media platform that allows users to create, share, and interact with digital drawings. Users can create their own drawings and post them on the platform, as well as like and comment on other user\u0027s drawings.',
     technologies:
       'TypeScript, NextJS, NextAuth, Tailwind CSS, React Query, React Hook Form, Yup, MongoDB, Mongoose, Cloudinary, Canvas API',
     title: 'Nudoodle',
@@ -73,7 +73,7 @@ const data = [
     id: 2,
     image: TICKERSAVER,
     description:
-      'A tracking app that a user can search for stocks and add those stocks to their dashboard to be tracked. Updates winner and loser stocks for the day in real time.',
+      'An app that allows users to track the performance of stocks in real-time. Users can search for and add stocks to their dashboard, where they can monitor the winners and losers of the day. The app provides updates on the stock prices in real-time.',
     technologies:
       'TypeScript, NextJS, NextAuth, Tailwind CSS, React Query, Formik, Yup, MongoDB, Mongoose, Finnhub Stock API, Cloudinary',
     title: 'Tickersaver',
@@ -84,7 +84,7 @@ const data = [
     id: 3,
     image: TRIPGUIDE,
     description:
-      'A hotel booking app where users can book a place and checkout using stripe.',
+      'A hotel booking app that enables users to easily reserve and pay for their stay at a hotel. The app allows users to book a room and check out using Stripe, a secure online payment processing platform.',
     technologies:
       'TypeScript, NextJS, NextAuth, Tailwind CSS, React Query, Zustand, Formik, MongoDB, Mongoose',
     title: 'TripGuide (wip)',
@@ -96,7 +96,7 @@ const data = [
     id: 4,
     image: CODEJOURNAL,
     description:
-      'An app where users can keep a journal of their code snippets. Users can add or delete cells that contains a markdown editor or a code editor.',
+      'An app that allows users to keep a digital journal of their code snippets and texts. The app features a customizable interface with cells that can contain either a markdown editor or a code editor. Users can add or delete cells as needed to organize and store their code snippets.',
     technologies:
       'TypeScript, React, Redux, ESBuild, Axios, localForage, Monaco Editor, React MD Editor, Immer, Lerna',
     title: 'Code Journal',
@@ -107,7 +107,7 @@ const data = [
     id: 5,
     image: GREETR,
     description:
-      'A library that generates formal and informal greetings in either english or spanish.',
+      'A library that provides a range of formal and informal greetings in both English and Spanish.',
     technologies: 'JavaScript, jQuery',
     title: 'Greetr Library/Framework',
     github: 'https://github.com/PeterSYoo/greetr-framework',
@@ -117,7 +117,7 @@ const data = [
     id: 6,
     image: RANDOMLIT,
     description:
-      'An app where a user can randomly generate a list of books by genre by consuming Google\u0027s Book API.',
+      'An app that generates a list of books from a specified genre by consuming Google\u0027s Book API. The app allows users to randomly browse and discover new books within their preferred genre.',
     technologies: 'JavaScript, jQuery, ajax, Google Books API',
     title: 'Random Lit',
     github: 'https://github.com/PeterSYoo/randomBookGenreGenerator',

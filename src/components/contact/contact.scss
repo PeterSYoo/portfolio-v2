@@ -25,11 +25,12 @@
   border-radius: 1rem;
   text-align: center;
   border: 1px solid transparent;
-  transition: var(--transition);
+  transition: all 0.05s ease-in-out;
 }
 
 .contact__option:hover {
   box-shadow: (2px 2px #85b5e2);
+  transition: all 0.05s ease-in-out;
 }
 
 .contact__option-icon {

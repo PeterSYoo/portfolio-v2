@@ -50,14 +50,13 @@ const About = () => {
           </div>
           <div className="about__content">
             <p variants={textAnimate}>
-              Hi! My name is Peter and I’ve fallen in love with coding. I come
-              from an art background, I studied illustration in college and have
-              worked professionally as a storyboard artist. I started my coding
-              journey back in March 2022 when I was first introduced to
-              JavaScript and I haven't stopped running since. I have an eye for
-              minimalist design that's sleek and professional and I enjoy both
-              the frontend and backend of coding. I'm always curious about new
-              technologies and have a passion for learning new things.
+              Hello! My name is Peter and I am passionate about coding. I have a
+              background in illustration and have worked as a storyboard artist.
+              However, since discovering JavaScript in March 2022, I have become
+              fully invested in the world of coding. I appreciate minimalistic,
+              professional design and enjoy both the frontend and backend
+              aspects of coding. I am constantly seeking out new technologies
+              and love learning new things.
             </p>
           </div>
         </div>
