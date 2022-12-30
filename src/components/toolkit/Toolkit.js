@@ -1,19 +1,23 @@
 import './toolkit.scss';
 import { CgCheckR } from 'react-icons/cg';
-import { SiHtml5 } from 'react-icons/si';
-import { SiCss3 } from 'react-icons/si';
-import { SiJavascript } from 'react-icons/si';
-import { SiTypescript } from 'react-icons/si';
-import { SiJquery } from 'react-icons/si';
-import { SiReact } from 'react-icons/si';
-import { SiTailwindcss } from 'react-icons/si';
-import { SiPython } from 'react-icons/si';
-import { SiMongodb } from 'react-icons/si';
-import { SiExpress } from 'react-icons/si';
-import { SiNodedotjs } from 'react-icons/si';
-import { SiDjango } from 'react-icons/si';
-import { SiPostgresql } from 'react-icons/si';
-import { motion } from 'framer-motion';
+import {
+  SiTypescript,
+  SiJavascript,
+  SiTailwindcss,
+  SiReact,
+  SiJquery,
+  SiHtml5,
+  SiCss3,
+  SiPython,
+  SiMongodb,
+  SiExpress,
+  SiNodedotjs,
+  SiDjango,
+  SiPostgresql,
+} from 'react-icons/si';
+import { TbBrandNextjs } from 'react-icons/tb';
+import { IoMdFlower } from 'react-icons/io';
+import { RiBearSmileFill } from 'react-icons/ri';
 
 const imageAnimate = {
   offScreen: { x: -100, opacity: 0 },
@@ -55,46 +59,61 @@ const text2Animate = {
 const frontEndData = [
   {
     id: 1,
-    icon: <SiHtml5 className="toolkit__details-icon" />,
-    name: 'HTML',
-  },
-  {
-    id: 2,
-    icon: <SiCss3 className="toolkit__details-icon" />,
-    name: 'CSS',
-  },
-  {
-    id: 3,
-    icon: <SiJavascript className="toolkit__details-icon" />,
-    name: 'JavaScript',
-  },
-  {
-    id: 4,
     icon: <SiTypescript className="toolkit__details-icon" />,
     name: 'TypeScript',
   },
   {
+    id: 2,
+    icon: <SiJavascript className="toolkit__details-icon" />,
+    name: 'JavaScript',
+  },
+  {
+    id: 3,
+    icon: <TbBrandNextjs className="toolkit__details-icon" />,
+    name: 'NextJS',
+  },
+  {
+    id: 4,
+    icon: <SiTailwindcss className="toolkit__details-icon" />,
+    name: 'Tailwind CSS',
+  },
+  {
     id: 5,
-    icon: <SiJquery className="toolkit__details-icon" />,
-    name: 'jQuery',
+    icon: <IoMdFlower className="toolkit__details-icon" />,
+    name: 'React Query',
   },
   {
     id: 6,
+    icon: <RiBearSmileFill className="toolkit__details-icon" />,
+    name: 'Zustand',
+  },
+  {
+    id: 7,
     icon: <SiReact className="toolkit__details-icon" />,
     name: 'React',
   },
   {
-    id: 7,
-    icon: <SiTailwindcss className="toolkit__details-icon" />,
-    name: 'Tailwind CSS',
+    id: 8,
+    icon: <SiJquery className="toolkit__details-icon" />,
+    name: 'jQuery',
+  },
+  {
+    id: 9,
+    icon: <SiHtml5 className="toolkit__details-icon" />,
+    name: 'HTML',
+  },
+  {
+    id: 10,
+    icon: <SiCss3 className="toolkit__details-icon" />,
+    name: 'CSS',
   },
 ];
 
 const backEndData = [
   {
     id: 1,
-    icon: <SiPython className="toolkit__details-icon" />,
-    name: 'Python',
+    icon: <TbBrandNextjs className="toolkit__details-icon" />,
+    name: 'NextJS',
   },
   {
     id: 2,
@@ -103,7 +122,7 @@ const backEndData = [
   },
   {
     id: 3,
-    icon: <CgCheckR className="toolkit__details-icon" />,
+    icon: <SiMongodb className="toolkit__details-icon" />,
     name: 'Mongoose',
   },
   {
@@ -128,59 +147,59 @@ const backEndData = [
   },
   {
     id: 8,
-    icon: <CgCheckR className="toolkit__details-icon" />,
-    name: 'Sanity',
+    icon: <SiPython className="toolkit__details-icon" />,
+    name: 'Python',
   },
 ];
 
 const Toolkit = () => {
   return (
-    <motion.section
+    <section
       id="toolkit"
       initial={'offScreen'}
       whileInView={'onScreen'}
       viewport={{ once: false, amount: 0.2 }}
       transition={{ staggerChildren: 0.1 }}
     >
-      <motion.h5 variants={textAnimate}>What Skills I Have</motion.h5>
-      <motion.h2 variants={textAnimate}>My toolkit</motion.h2>
+      <h5 variants={textAnimate}>What Skills I Have</h5>
+      <h2 variants={textAnimate}>My toolkit</h2>
       <div className="container toolkit__container">
         {/* START OF FRONTEND */}
-        <motion.div className="toolkit__frontend" variants={btnAnimate}>
-          <motion.h3 variants={textAnimate}>Frontend Development</motion.h3>
-          <motion.div className="toolkit__content" variants={btnAnimate}>
+        <div className="toolkit__frontend" variants={btnAnimate}>
+          <h3 variants={textAnimate}>Frontend Development</h3>
+          <div className="toolkit__content" variants={btnAnimate}>
             {frontEndData.map(({ id, icon, name }) => {
               return (
                 <article key={id} className="toolkit__details">
-                  <motion.div variants={textAnimate}>{icon}</motion.div>
+                  <div variants={textAnimate}>{icon}</div>
                   <div>
-                    <motion.h4 variants={text2Animate}>{name}</motion.h4>
+                    <h4 variants={text2Animate}>{name}</h4>
                   </div>
                 </article>
               );
             })}
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
         {/* END OF FRONTEND */}
         {/* START OF BACKEND */}
-        <motion.div className="toolkit__backend" variants={btnAnimate}>
-          <motion.h3 variants={textAnimate}>Backend Development</motion.h3>
-          <motion.div className="toolkit__content" variants={btnAnimate}>
+        <div className="toolkit__backend" variants={btnAnimate}>
+          <h3 variants={textAnimate}>Backend Development</h3>
+          <div className="toolkit__content" variants={btnAnimate}>
             {backEndData.map(({ id, icon, name }) => {
               return (
                 <article key={id} className="toolkit__details">
-                  <motion.div variants={textAnimate}>{icon}</motion.div>
+                  <div variants={textAnimate}>{icon}</div>
                   <div>
-                    <motion.h4 variants={text2Animate}>{name}</motion.h4>
+                    <h4 variants={text2Animate}>{name}</h4>
                   </div>
                 </article>
               );
             })}
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
         {/* END OF BACKEND */}
       </div>
-    </motion.section>
+    </section>
   );
 };
 
