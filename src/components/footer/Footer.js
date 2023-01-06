@@ -93,7 +93,7 @@ const Footer = () => {
             <font className="footer__resume-text">Resumé</font>
           </button>
         </a>
-        <a
+        {/*         <a
           href="https://peters-blog.vercel.app/"
           target="_blank"
           rel="noreferrer"
@@ -106,7 +106,7 @@ const Footer = () => {
           >
             <font className="footer__resume-text">Blog</font>
           </button>
-        </a>
+        </a> */}
         <a
           href="https://www.linkedin.com/in/petersyoo/"
           target="_blank"

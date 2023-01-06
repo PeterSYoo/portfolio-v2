@@ -15,7 +15,7 @@ header {
 
 /* ==== CTA ==== */
 .cta {
-  margin-top: 1em;
+  margin-top: 0.3em;
   display: flex;
   gap: 2em;
   justify-content: center;
@@ -160,6 +160,8 @@ header {
     left: calc(50% - 7.5rem);
     z-index: 1;
     margin-top: 11.5rem;
+    display: flex;
+    align-items: center;
   }
 
   .socials__title {

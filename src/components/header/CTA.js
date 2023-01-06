@@ -44,7 +44,7 @@ const CTA = () => {
           </motion.button>
         </a>
       </span>
-      <span>
+      {/*       <span>
         <a
           href="https://peters-blog.vercel.app/"
           target="_blank"
@@ -59,7 +59,7 @@ const CTA = () => {
             <font className="cta__resume-text">Blog</font>
           </motion.button>
         </a>
-      </span>
+      </span> */}
     </div>
   );
 };

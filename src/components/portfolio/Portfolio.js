@@ -68,6 +68,7 @@ const data = [
     title: 'Nudoodle',
     github: 'https://github.com/PeterSYoo/doodlezilla-nextjs-tailwind',
     demo: 'https://nudoodle.vercel.app/',
+    video: 'https://www.youtube.com/watch?v=jIndNFS_bgc',
   },
   {
     id: 2,
@@ -79,6 +80,7 @@ const data = [
     title: 'Tickersaver',
     github: 'https://github.com/PeterSYoo/stocksaver-nextjs-tailwind',
     demo: 'https://tickersaver.vercel.app/',
+    video: 'https://www.youtube.com/watch?v=E1rv0ZqCx74',
   },
   {
     id: 3,
@@ -102,6 +104,7 @@ const data = [
     title: 'Code Journal',
     github: 'https://github.com/PeterSYoo/code-journal',
     demo: '',
+    video: 'https://www.youtube.com/watch?v=OSw-yf6Htcg',
   },
   {
     id: 5,
@@ -133,7 +136,16 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         {data.map(
-          ({ id, image, description, title, github, demo, technologies }) => {
+          ({
+            id,
+            image,
+            description,
+            title,
+            github,
+            video,
+            demo,
+            technologies,
+          }) => {
             return (
               <article
                 key={id}
@@ -171,6 +183,19 @@ const Portfolio = () => {
                         variants={text2Animate}
                       >
                         <font className="portfolio__demo-text">Live Demo</font>
+                      </button>
+                    </a>
+                  ) : null}
+
+                  {video ? (
+                    <a href={video} target="_blank" rel="noreferrer">
+                      <button
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className="portfolio__demo-btn"
+                        variants={text2Animate}
+                      >
+                        <font className="portfolio__demo-text">Video Demo</font>
                       </button>
                     </a>
                   ) : null}

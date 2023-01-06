@@ -53,8 +53,6 @@ const Header = () => {
             <motion.h3 className="text-white" variants={textAnimate}>
               Fullstack Developer
             </motion.h3>
-          </div>
-          <div className="">
             <CTA />
           </div>
         </div>
